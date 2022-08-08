@@ -1,0 +1,24 @@
+@charset "urf-8";
+
+#bottom_wrap{background-color: #191919; color: #a8a8a8; height: 230px; font-size: 15px; padding-top: 30px; width: 100%; min-width: 1800px;}
+#bottom{margin: 0 auto; width:1400px; height: 200px;}
+
+
+.ft_left {width: 300px; float: left; text-align: center; width: 280px; margin-right: 20px; height: 200px; line-height: 20px; border-right: 1px solid #383435;}
+
+
+.ft_left .ft_logo{margin-bottom: 10px;}
+.ft_left h3{font-size: 16px; font-weight: 500; color: #a8a8a8; margin-bottom: 7px;}
+.ft_left h3+p{color:#ffffff; font-size: 35px; font-weight: 800; margin-bottom: 20px;}
+
+
+.ft_right{float: left; margin-left: 20px;}
+.ft_right ul{margin-bottom: 30px; }
+.ft_right ul li{display: inline; margin-right: 10px; background: url(../images/bar1.jpg) no-repeat right center; padding-right: 20px;}
+
+
+.ft_right ul li a{color: #ffffff; font-size: 16px; clear: both; font-weight: 500;}
+.ft_right p:nth-of-type(1){color: #ffffff; font-weight: 500; float: left; margin-right: 10px; font-size: 17px;}
+.ft_right p:nth-of-type(2){margin-bottom: 10px;}
+.ft_right address{font-style: normal;}
+.ft_right p:nth-of-type(4){ margin-top: 10px;}
