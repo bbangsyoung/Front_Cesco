@@ -1,18 +1,21 @@
 @charset "urf-8";
 
 
-/*contents_04*/
+/*contents_03*/
 #contents_03{clear: both; width: 100%;   margin-bottom: 500px; position: relative; border: 3px solid red; box-sizing: border-box;}
 
 #contents_03 h2{font-size: 35px; font-weight: 700; text-align: center; margin-bottom: 20px; }
 
 #contents_03_review{background-color: #2284cf; margin: 0 auto; width: 100%; height: 400px; text-align: center; }
-#contents_03_review_con{width: 1400px; border: 1px solid red; margin: 0 auto; border: 1px solid aqua;}
+#contents_03_review_con{width: 1400px; border: 1px solid aqua; margin: 0 auto; border: 1px solid aqua;}
 
-#contents_03_review_con>div{width: 680px; height: 300px; border: 1px solid yellow; box-sizing: border-box; margin: 0; padding: 0;}
+#contents_03_review_con>div{width: 680px; height: 300px; border: 1px solid yellow; box-sizing: border-box; margin: 0; padding: 0; text-align: left; }
 #contents_03_review_con>div:nth-child(1){float: left;}
 #contents_03_review_con>div:nth-child(2){float: right;}
 
+#contents_03_review_con ul {margin-top: 30px;}
+#contents_03_review_con ul li{color:#ffffff; height: 35px; border-bottom: 1px solid aqua; line-height: 35px; margin: 0 40px;}
+#contents_03_review_con ul li span{float: right; color: #000000; line-height: 35px;}
 
 #contents_03_webtoon{ position: absolute; left:50%; bottom:-190px; transform: translate(-50%,0); width: 1030px; text-align: center; margin: 0 auto;}
 
