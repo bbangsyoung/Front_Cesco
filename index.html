@@ -12,57 +12,83 @@
 <body>
     <!--상단-->
     <div id="top_wrap">
+        <div id="v_con">
+            <video autoplay preload="auto" muted loop poster="images/video_freeview.jpg">
+                <source src="media/main_video.mp4" type="video/mp4">
+            </video>
+        </div>
+
         <header id="top">
-            <h1><a href="index.html"><img src="images/logo.png" alt="logo" width="161" height="90"></a></h1>
-            <ul class="quick">
-                <li><a href="index.html">홈</a></li>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">ID/PW찾기</a></li>
-            </ul>
+            <div class="quick_wrap1">
+                <div class="quick_wrap2">
+                    <div class="logo">
+                        <h1><a href="#"><img src="images/logo.png" alt="logo" width="148" height="60"></a></h1>
+                    </div>
+                    
+                    <ul class="quick">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">ID/PW찾기</a></li>
+                    </ul>
+                </div>
+            </div>
 
-            <nav id="main_navi">
-                <ul>
-                    <li><a href="#">세스코</a></li>
-                    <li><a href="#">서비스</a></li>
-                    <li><a href="#">쇼핑</a></li>
-                    <li><a href="#">고객지원</a></li>
-                    <li><a href="#">세스코광장</a></li>
-                    <li><a href="#">마이세스코</a></li>
-                </ul>
-            </nav>
+            <div id="main_navi_wrap">
+                <nav id="main_navi">
+                    <ul>
+                        <li><a href="#">세스코</a></li>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">쇼핑</a></li>
+                        <li><a href="#">고객지원</a></li>
+                        <li><a href="#">세스코광장</a></li>
+                        <li><a href="#">마이세스코</a></li>
+                    </ul>
+
+                </nav>
+                <!--main_navi-->
+            </div>
+            <!--main_navi_wrap-->
         </header>
+
+
+
+
+        <div id="main_top">
+            <div id="main_top_1">
+                <h1>고객의 행복에 기여하는 생활환경 위생기업</h1>
+                <p>Integrated</p>
+                <p>Rest Management</p>
+                <p>세스코 통합해충방제 솔루션<br>
+                전문가의 진단으로 1:1통합 맞춤방제 솔루션 제공</p>
+            </div>
+            <!--contents_1-->
+
+            <div id="main_top_2">
+               <div>
+                <ul>
+                    <li>세스코<br>가상체험</li>
+                    <li>놀라운<br>세스코 이야기</li>
+                    <li>우리집<br>위생체크</li>
+                    <li>가정집</li>
+                    <li>요식업체</li>
+                    <li>일반사업체</li>
+                    <li>소득증명서<br>출력</li>
+                    <li>서비스<br>리포트출력</li>
+                    <li>세스코<br>가입추천</li>
+                </ul>
+                </div>
+                </div> 
+            </div>
+        </div>
+
+
         <!--top-->
-    </div>
-    <!--상단-->
 
 
 
-    <div id="main_top">
-        <div id="main_top_1">
-            <p><img src="images/main_img01.jpg" alt="세스코" width="100%" height="100%"></p>
-            <p>고객의 행복에 기여하는 생활환경 위생기업</p>
-            <p>Integrated</p>
-            <p>Rest Management</p>
-            <p>세스코 통합해충방제 솔루션</p>
-            <p>전문가의 진단으로 1:1통합 맞춤방제 솔루션 제공</p>
-        </div>
-        <!--contents_1-->
 
-        <div id="main_top_2">
-            <ul>
-                <li>세스코 가상체험</li>
-                <li>놀라운 세스코 이야기</li>
-                <li>우리집 위생체크</li>
-                <li>가정집</li>
-                <li>요식업체</li>
-                <li>일반사업체</li>
-                <li>소득증명서 출력</li>
-                <li>서비스 리포트출력</li>
-                <li>세스코 가입추천</li>
-            </ul>
-        </div>
-    </div>
+
 
 
 
@@ -133,87 +159,96 @@
 
     <div id="contents_02">
         <!--배너8개짜리-->
-        <div>
-            <h3>Why<br>세스코 멤버스</h3>
-            <p>국민 브랜드 세스코 멤버스</p>
-        </div>
-        <div>
-            <p>배경이미지 영역</p>
-        </div>
-        <div>
-            <h3>무료방문 상담센터</h3>
-            <p>우리집 해충이 걱정된다면<br>무료로 상담 받아보세요</p>
-        </div>
-        <div>
-            <p>배경이미지 영역</p>
-        </div>
-        <div>
-            <h3>무엇이든<br>물어보세요</h3>
-            <p>해충, 바이러스, 진드기 등<br>세스코 서비스에 관한 Q&amp;A</p>
-        </div>
-        <div>
-            <p>배경이미지 영역</p>
-        </div>
-        <div>
-            <h3>세스코<br>생활위생용품</h3>
-            <p>세스코 과학으로 만든 생활용품</p>
-        </div>
-        <div>
-            <p>배경이미지 영역</p>
+        <div class="contents">
+            <div class="con3_top">
+                <div>
+                    <h3>Why<br>세스코 멤버스</h3>
+                    <p>국민 브랜드 세스코 멤버스</p>
+                </div>
+                <div>
+                    <p>배경이미지 영역</p>
+                </div>
+                <div>
+                    <h3>무료방문 상담센터</h3>
+                    <p>우리집 해충이 걱정된다면<br>무료로 상담 받아보세요</p>
+                </div>
+                <div>
+                    <p>배경이미지 영역</p>
+                </div>
+            </div>
+
+            <div class="con3_bottom">
+                <div style="flex-grow: 1">
+                    <p>배경이미지 영역</p>
+                </div>
+                <div style="flex-grow: 1">
+                    <h3>무엇이든<br>물어보세요</h3>
+                    <p>해충, 바이러스, 진드기 등<br>세스코 서비스에 관한 Q&amp;A</p>
+                </div>
+                <div style="flex-grow: 1">
+                    <p>배경이미지 영역</p>
+                </div>
+                <div style="flex-grow: 1">
+                    <h3>세스코<br>생활위생용품</h3>
+                    <p>세스코 과학으로 만든 생활용품</p>
+                </div>
+            </div>
         </div>
     </div>
     <!--contents_02-->
 
-<div id="contents_03">
-   <h2>세스코 이용후기</h2>
-    <div id="contents_03_review">
-      
-       <div id="contents_03_review_con">
-        <div>
-            <h3>BEST 이용후기</h3>
-            <ul>
-                <li>파리바게뜨 이용후기<span>2022-08-09</span></li>
-                <li>파리바게뜨 이용후기<span>2022-08-09</span></li>
-                <li>파리바게뜨 이용후기<span>2022-08-09</span></li>
-                <li>파리바게뜨 이용후기<span>2022-08-09</span></li>
-                <li>파리바게뜨 이용후기<span>2022-08-09</span></li>
-            </ul>
-        </div>
-        <div>
-            <h3>칭찬합니다</h3>
-            <ul>
-                <li>관리자님 감사합니다.</li>
-                <li>관리자님 감사합니다.</li>
-                <li>관리자님 감사합니다.</li>
-                <li>관리자님 감사합니다.</li>
-                <li>관리자님 감사합니다.</li>
-            </ul>
-        </div>
-        </div>
-    </div>
-    <!--contents_03-->
 
-    <div id="contents_03_webtoon">
-        <figure>
-            <h4>01. 개미군단</h4>
-            <figcation>&quot;내 아이를 지켜라&quot; 편</figcation>
-            <p class="con4_sum"><img src="images/main_review_01.PNG" alt="#" width="250" height="130"></p>
-            <p>심순영님 사연 보러가기</p>
-        </figure>
-        <figure>
-            <h4>02. 수퍼바퀴</h4>
-            <figcation>&quot;혼자서는 절대 안돼&quot; 편</figcation>
-            <p class="con4_sum"><img src="images/main_review_02.PNG" alt="#" width="250" height="130"></p>
-            <p>이민성님 사연 보러가기</p>
-        </figure>
-        <figure>
-            <h4>03. 해충으로부터</h4>
-            <figcation>&quot;우리가게 지키기&quot; 편</figcation>
-            <p class="con4_sum"><img src="images/main_review_03.PNG" alt="#" width="250" height="130"></p>
-            <p>박성민님 사연 보러가기</p>
-        </figure>
-    </div>
-    
+
+    <div id="contents_03">
+        <h2>세스코 이용후기</h2>
+        <div id="contents_03_review">
+
+            <div id="contents_03_review_con">
+                <div id="best_review">
+                    <h3>BEST 이용후기</h3>
+                    <ul>
+                        <li><img src="images/borad_icon_1.png" alt="new" width="20" height="20">파리바게뜨 이용후기<span>2022-08-09</span></li>
+                        <li>세스코를 만난 후 평화를 얻었다_서비스 상세후기<span>2022-08-09</span></li>
+                        <li>직원분의 서비스에 감동받았습니다~<span>2022-08-09</span></li>
+                        <li>세스코 이용한지 2년이 넘었는데 진짜 너무 좋아요<span>2022-08-09</span></li>
+                        <li>친절한 서비스! 정확한 점검! ^^ 선택에 후회없습니다. <span>2022-08-09</span></li>
+                    </ul>
+                </div>
+                <div id="compliment_review">
+                    <h3>칭찬합니다</h3>
+                    <ul>
+                        <li><em>No.272</em>강제경 컨설턴트님 감사합니다.<span>2022-08-09</span></li>
+                        <li>의정부지사 김성환기사님을 칭찬하고싶습니다~~<span>2022-08-09</span></li>
+                        <li>용산지사 김동현 SC님! 감사드립니다!<span>2022-08-09</span></li>
+                        <li>번개맨 세스코 감사합니다^^ <span>2022-08-09</span></li>
+                        <li>강제경 컨설턴트님 감사합니다!!!<span>2022-08-09</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--contents_03-->
+
+        <div id="contents_03_webtoon">
+            <figure>
+                <h4>01. 개미군단</h4>
+                <figcation>&quot;내 아이를 지켜라&quot; 편</figcation>
+                <p class="con4_sum"><img src="images/main_review_01.PNG" alt="#" width="250" height="130"></p>
+                <p>심순영님 사연 보러가기</p>
+            </figure>
+            <figure>
+                <h4>02. 수퍼바퀴</h4>
+                <figcation>&quot;혼자서는 절대 안돼&quot; 편</figcation>
+                <p class="con4_sum"><img src="images/main_review_02.PNG" alt="#" width="250" height="130"></p>
+                <p>이민성님 사연 보러가기</p>
+            </figure>
+            <figure>
+                <h4>03. 해충으로부터</h4>
+                <figcation>&quot;우리가게 지키기&quot; 편</figcation>
+                <p class="con4_sum"><img src="images/main_review_03.PNG" alt="#" width="250" height="130"></p>
+                <p>박성민님 사연 보러가기</p>
+            </figure>
+        </div>
+
     </div>
     <!--contents_03-->
 
@@ -224,7 +259,7 @@
         <h2>TV 광고&amp;홍보</h2>
         <div id="contents_05_1">
             <div class="contents_05_video">
-               <iframe width="600" height="100%" src="https://www.youtube.com/embed/No2acVT2xdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="600" height="100%" src="https://www.youtube.com/embed/No2acVT2xdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
             <div id="contents_05_info">
@@ -288,7 +323,7 @@
                     서울시 강동구 상일로 10길 46 세스코 터치센터(우:05288) TEL 1588-1119 / FAX (02)488-1720<br>
                     통신판매업신고번호: 제2008-서울강동-0240호<br>
                     사업자등록번호: 212-81-05946
-                </address>                
+                </address>
                 <p>ⓒSyoung. all rights reserved.</p>
 
             </div>
@@ -305,32 +340,4 @@
 
 
 
-
-
-
-
 </body></html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
