@@ -50,9 +50,6 @@ html {
 
 
 
-
-
-
 /**/
 
 #top {
@@ -66,81 +63,102 @@ html {
 
 .quick_wrap1 {
     width: 100%;
-    height: 50px;
+    height: 100px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     min-width: 1920px;
 }
 
 .quick_wrap2 {
-    border: 1px solid aqua;
-    width: 1400px;
-    height: 50px;
-    margin: 0 auto;
+    width: 1170px;
+    height: 85px;
+    margin: 20px auto;
 }
 
 .logo {
+    margin-top: 10px;
     width: 146px;
-    height: 50px;
+    line-height: 200px;
     border: 1px solid orange;
     float: left;
+    text-align: center;
+}
+
+
+.main_menu {
+    float: right;
+    width: 800px;
+    height: 80px;
+    text-align: right;
 }
 
 .quick {
-    width: 320px;
-    height: 20px;
-    border: 1px solid blue;
     float: right;
-    background: rgba(255, 255, 255, 0.2)
+    width: 260px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    display: inline;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .quick li {
     float: left;
-    width: 80px;
+
     height: 20px;
     text-align: center;
     line-height: 20px;
     font-size: 14px;
+
+    box-sizing: border-box;
+    width: 50px;
+    background: url(../images/bar1.jpg) no-repeat 0 4px;
+
 }
 
+.quick li:nth-child(1) {
+    margin-left: 7px;
+}
 
+.quick li:nth-child(3) {
+    width: 65px;
+    margin-right: 0;
+
+}
+
+.quick li:nth-child(4) {
+    width: 80px;
+}
 
 .quick li a {
     color: #ffffff;
 }
 
 
-
-#main_navi_wrap {
-    clear: both;
-    width: 1400px;
-    height: 60px;
-    border: 1px solid yellow;
-    margin: 50px auto 0 auto;
-}
-
-
 #main_navi {
-    border: 1px solid aqua;
     float: right;
     margin: 0 auto;
-    width: 500px;
-    height: 60px;
+    width: 1000px;
+    height: 50px;
+
 }
 
 #main_navi ul {
-    float: right;
-    width: 500px;
+
     height: 60px;
-    text-align: right;
     line-height: 60px;
-    background-color: blue;
+
 }
 
 #main_navi ul li {
-    float: right;
+    text-align: center;
+    width: 110px;
+    margin-left: 10px;
     display: inline-block;
-    margin-left: 15px;
-    background-color: bisque;
+    line-height: 50px;
+
+
 }
 
 #main_navi ul li:first-child {
@@ -219,63 +237,73 @@ html {
 }
 
 #main_top_2 > div {
-    margin: auto;
+    margin: 0 auto;
     line-height: 100px;
-    width: 900px;
-    height: 100px;
-    border: 1px solid aqua;
+    width: 1180px;
 
 }
 
-#main_top_2 > div > ul {
-    text-align: center;
-    width: 900px;
-    line-height: 100px;
-}
 
 #main_top_2 > div > ul > li {
+    cursor: pointer;
     float: left;
     color: #ffffff;
     height: 100px;
-    width: 100px;
+    width: 130px;
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 20px;
-    padding-top: 30px;
+    border: none;
+}
+
+#main_top_2 > div > ul > li a {
+    color: #ffffff;
+    display: block;
+    height: 100px;
+    width: 130px;
+    margin-top: 30px;
+    font-weight: 500;
+    
 }
 
 #main_top_2 > div > ul > li:nth-child(1) {
-    color: red;
+    background-color: #48b1ed;
 }
 
-#main_top_2 > div > ul > li:nth-child(1) {
-    color: red;
+#main_top_2 > div > ul > li:nth-child(2) {
+    background-color: #48b1ed;
 }
 
-#main_top_2 > div > ul > li:nth-child(1) {
-    color: red;
+#main_top_2 > div > ul > li:nth-child(3) {
+    background-color: #48b1ed;
 }
 
-#main_top_2 > div > ul > li:nth-child(1) {
-    color: red;
+#main_top_2 > div > ul > li:nth-child(4) {
+    line-height: 40px;
 }
 
-#main_top_2 > div > ul > li:nth-child(1) {
-    color: red;
+#main_top_2 > div > ul > li:nth-child(5) {
+    line-height: 40px;
 }
 
-#main_top_2 > div > ul > li:nth-child(1) {
-    color: red;
+#main_top_2 > div > ul > li:nth-child(6) {
+    line-height: 40px;
 }
 
-#main_top_2 > div > ul > li:nth-child(1) {
-    color: red;
+#main_top_2 > div > ul > li:nth-child(7) {
+    background-color:  #313133;
 }
 
-#main_top_2 > div > ul > li:nth-child(1) {
-    color: red;
+#main_top_2 > div > ul > li:nth-child(7) a{
+
 }
 
-#main_top_2 > div > ul > li:nth-child(1) {
-    color: red;
+#main_top_2 > div > ul > li:nth-child(8) {
+     background-color:  #313133;
 }
+
+#main_top_2 > div > ul > li:nth-child(9) {
+     background-color:  #313133;
+    border-right: none;
+}
+
