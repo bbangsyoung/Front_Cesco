@@ -20,15 +20,18 @@
 }
 
 
-#contents_00> h2{
-    color:#333333;
-margin-bottom: 50px;
+#contents_00 > h2 {
+    color: #333333;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 35px;
-    
+
 }
 
-#contents_00> h2>i{color: red;}
+#contents_00 > h2 > i {
+
+font-size: 40px;
+}
 
 #contents_00 > ul {
     width: 1225px;
@@ -70,7 +73,9 @@ margin-bottom: 50px;
     width: 140px;
 }
 
-#contents_00 > ul > li:nth-child(1) h4{width: 80px;}
+#contents_00 > ul > li:nth-child(1) h4 {
+    width: 80px;
+}
 
 #contents_00 h4 {
     margin-bottom: 0px;
