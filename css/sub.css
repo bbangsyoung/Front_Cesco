@@ -1,2 +1,164 @@
 @charset "utf-8";
 
+
+#con_summary {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+#con_summary > h2 {
+    margin-top: 100px;
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+.boxing {
+    width: 1260px;
+    height: 80px;
+    margin: 0 auto;
+    background: url(../images/summary_tit1.jpg) no-repeat 800px -30px;
+    background-color: #f7f7f7;
+    font-size: 22px;
+    border-radius: 20px;
+    line-height: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.boxing > span {
+    font-weight: 800;
+    color: black;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+
+
+#pest_list {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+#pest_list > ul {
+    margin: 0 auto;
+    width: 1300px;
+    float: left;
+
+}
+
+#pest_list > ul > li {
+    display: block;
+    width: 483px;
+    height: 180px;
+    float: left;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    padding-left: 140px;
+}
+
+#pest_list > ul > li:nth-child(even) {
+    margin-left: 10px;
+}
+
+
+#pest_list > ul > li:nth-child(3){
+    background: url(../images/con01_01.jpg) no-repeat 260px -18px;
+}
+
+#pest_list > ul > li:nth-child(5){
+    background: url(../images/con01_02.jpg) no-repeat 0 0;
+}
+
+
+
+#pest_list > ul > li > h4 {
+    color: #3ba4d9;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+#pest_list > ul > li >p{
+    font-size: 16px;
+    margin-left: 10px;
+    letter-spacing: -0.5px;
+    line-height: 27px;
+}
+
+#pest_list > ul > li >p::before{
+    content: "· ";
+}
+
+#pest_list > ul > li >p>span {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    color:#ffffff;
+    font-size: 14px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #50585d;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#service {
+    clear: both;
+    margin: 0 auto;
+    width: 1300px;
+    border: 1px solid red;
+    height: 500px;
+}
+
+#service>h3{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+.step_tit{font-size: 20px; color: red; background: yellow;
+width: 250px; height: 100px; }
+
+
+#service> div{
+    text-align: center;
+    width: 250px;
+    border: 1px solid aqua;
+    float: left;
+}
+
+#service> div h5{
+    color:fuchsia;
+    font-weight: 500;
+    height: 60px;
+}
+
+
+
+
+
+
+
+
+
