@@ -110,19 +110,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #service {
     clear: both;
     margin: 0 auto;
@@ -153,6 +140,141 @@ width: 250px; height: 100px; }
     font-weight: 500;
     height: 60px;
 }
+
+
+
+
+
+
+/*login 로그인*/
+#login {width: 1300px; margin: 120px auto;}
+
+#login_box {border: 1px solid #dddddd; width: 900px; height: 420px; margin: 0 auto;}
+
+.login_box_left h4+p{width: 335px;  height: 30px; margin-bottom: 20px;}
+
+#login_box h3{font-size: 25px; font-weight: 700;}
+#login_box h4{font-size: 18px; font-weight: 700;}
+
+.login_box_left{float: left;  width: 380px; margin-left: 90px; margin-top: 70px;}
+
+.login_box_right{float: right; width: 350px; margin-right: 20px; margin-top: 70px; }
+
+
+
+
+.u_id input,
+.u_pwd input {
+    border: 1px solid rgba(153, 153, 153, 0.5);
+    width: 330px;
+    height: 40px;
+    border-radius: 2px;
+    text-indent: 1em;
+    outline: none;
+    margin-bottom: 3px;
+}
+
+.login {
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+
+
+.login input {
+    width: 335px;
+    height: 45px;
+    border: none;
+    background-color: #2bc1ff;
+    color: white;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login input:hover {
+    background-color: #50ccff;
+}
+
+
+/**/
+
+.bth_link {
+    height: 70px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.login_box_right h4+p{margin-bottom: 10px;}
+
+.bth_line{
+    border-bottom: 1px dotted #dddddd;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+
+
+
+
+.bth_link input {
+    width: 100px;
+    height: 33px;
+    border: none;
+    background-color: #2bc1ff;
+    color: white;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bth_link input:hover {
+    background-color: #50ccff;
+}
+
+
+
+
+
+.login_chk {
+    height: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+
+.login_chk input {
+    vertical-align: -1.7px;
+    margin-right: 5px;
+}
+
+.login_chk label{font-size: 13px;}
+
+.login_chk +p{color:red;}
+
+
+
+
+
+
+
+/*회원가입 sign_up*/
+
+#sign_up{width: 100%;margin-top: 80px;}
+
+#sign_up_box{ width: 1000px;  height: 500px; margin: 0 auto; border: 1px solid #cccccc; box-sizing: border-box;}
+
+.sign_info{border-collapse: collapse;}
+.sign_info caption{text-align: left;}
+.sign_info td, .sign_info th{border: 1px solid #dddddd; font-size: 13px;}
+.sign_info th{background-color: #dddddd; width: 220px;}
+
+
+
+
 
 
 
