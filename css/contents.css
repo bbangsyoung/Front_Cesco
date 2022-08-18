@@ -168,7 +168,7 @@ font-size: 40px;
 
 #contents_01_con2 > div > em {
     display: block;
-    background: #48b1ed;
+    background: #1f97eb;
     width: 120px;
     height: 40px;
     line-height: 40px;
@@ -177,24 +177,24 @@ font-size: 40px;
     position: absolute;
     right: 15px;
     bottom: 15px;
+    border-radius: 3px;
 
 }
 
 
-#contents_01_con2 > h2 {
-    font-size: 35px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 30px;
-}
 
 #contents_01_con2 > div > h3 {
+    margin-top: 25px;
+    margin-left: 20px;
     font-size: 22px;
-    font-weight: 600;
-
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
+#contents_01_con2 > div p{
+    margin-left: 20px;
+    margin-right: 10px;
+}
 
 
 
@@ -228,6 +228,7 @@ font-size: 40px;
     color: #313131;
     font-size: 40px;
     font-weight: 700;
+    margin-top: 30px;
 
 }
 
@@ -264,12 +265,14 @@ font-size: 40px;
     font-size: 16px;
     font-weight: 700;
     float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-indent: 10px;
 }
 
 
-label {
-    float: left;
-}
+
 
 .result {
     clear: both;

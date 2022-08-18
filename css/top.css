@@ -13,6 +13,7 @@ html {
     position: relative;
 }
 
+
 #v_con {
     position: absolute;
     top: 0;
@@ -22,12 +23,15 @@ html {
     overflow: hidden;
 }
 
+
+
 #v_con video {
     width: auto;
     height: auto;
     min-width: 100%;
     min-height: 100%;
 }
+
 
 .patten {
     width: 100%;
@@ -62,55 +66,46 @@ html {
 }
 
 .quick_wrap1 {
+    position: absolute;
     width: 100%;
-    height: 100px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    min-width: 1920px;
+    height: 70px;
+    border-bottom: 1px solid #515151;
+    
+     
 }
 
 .quick_wrap2 {
-    width: 1170px;
-    height: 85px;
-    margin: 20px auto;
+    width: 1400px;
+    height: 70px;
+    margin: 0 auto;
 }
 
 .logo {
-    margin-top: 10px;
     width: 146px;
     line-height: 200px;
-    border: 1px solid orange;
     float: left;
     text-align: center;
 }
 
 
-.main_menu {
-    float: right;
-    width: 800px;
-    height: 80px;
-    text-align: right;
-}
 
 .quick {
     float: right;
-    width: 260px;
+    width: 120px;
     height: 20px;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
     text-align: center;
     display: inline;
     text-align: center;
-    margin-top: 10px;
 }
 
 .quick li {
     float: left;
-
     height: 20px;
     text-align: center;
     line-height: 20px;
     font-size: 14px;
-
     box-sizing: border-box;
     width: 50px;
     background: url(../images/bar1.jpg) no-repeat 0 4px;
@@ -121,15 +116,7 @@ html {
     margin-left: 7px;
 }
 
-.quick li:nth-child(3) {
-    width: 65px;
-    margin-right: 0;
 
-}
-
-.quick li:nth-child(4) {
-    width: 80px;
-}
 
 .quick li a {
     color: #ffffff;
@@ -137,26 +124,28 @@ html {
 
 
 #main_navi {
-    float: right;
-    margin: 0 auto;
-    width: 1000px;
+    line-height: 100px;
+    text-align: center;
+    margin: 10px auto;
+    width: 800px;
     height: 50px;
 
 }
 
 #main_navi ul {
 
-    height: 60px;
-    line-height: 60px;
+     margin: 0 auto;
+    line-height: 50px;
 
 }
 
 #main_navi ul li {
     text-align: center;
-    width: 110px;
-    margin-left: 10px;
+    padding: 0 30px;
     display: inline-block;
     line-height: 50px;
+
+    cursor: pointer;
 
 
 }
@@ -167,9 +156,8 @@ html {
 
 #main_navi ul li a {
     color: #ffffff;
-    font-size: 22px;
-    padding-bottom: 15px;
-    font-weight: 700;
+    font-size: 19px;
+    font-weight: 600;
 }
 
 #main_navi ul li a:hover {
@@ -265,6 +253,11 @@ html {
     font-weight: 500;
     
 }
+
+
+
+
+/*하단 메뉴*/
 
 #main_top_2 > div > ul > li:nth-child(1) {
     background-color: #48b1ed;

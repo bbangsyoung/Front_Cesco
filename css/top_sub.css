@@ -13,6 +13,7 @@ html {
     position: relative;
 }
 
+
 #sub2 {
     background: url(../images/sub_menu1.jpg);
     bottom: 0;
@@ -27,6 +28,7 @@ html {
     min-width: 100%;
     min-height: 100%;
 }
+
 
 .patten {
     width: 100%;
@@ -154,7 +156,6 @@ html {
     z-index: 20;
     width: 1300px;
     height: 50px;
-    
     border-bottom: 1px solid #dddddd;
     background: #ffffff;
     margin: 0 auto;
