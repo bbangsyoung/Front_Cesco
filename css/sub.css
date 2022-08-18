@@ -27,8 +27,15 @@
     margin-bottom: 30px;
     margin-top: 15px;
 }
-.boxing+p{margin-bottom: 30px;}
-.boxing+p span{/*color:#2bc1ff;*/ background: linear-gradient(to top, #ffe400 40%, transparent 40%)}
+
+.boxing + p {
+    margin-bottom: 30px;
+}
+
+.boxing + p span {
+    /*color:#2bc1ff;*/
+    background: linear-gradient(to top, #ffe400 40%, transparent 40%)
+}
 
 .boxing > span {
     font-weight: 800;
@@ -68,34 +75,35 @@
 }
 
 
-#pest_list > ul > li:nth-child(1){
+#pest_list > ul > li:nth-child(1) {
     background: url(../images/pest_list01.jpg) no-repeat 30px;
 }
 
-#pest_list > ul > li:nth-child(2){
+#pest_list > ul > li:nth-child(2) {
     background: url(../images/pest_list02.jpg) no-repeat 30px;
 }
 
-#pest_list > ul > li:nth-child(3){
+#pest_list > ul > li:nth-child(3) {
     background: url(../images/pest_list01.jpg) no-repeat 30px;
 }
 
-#pest_list > ul > li:nth-child(4){
+#pest_list > ul > li:nth-child(4) {
     background: url(../images/pest_list04.jpg) no-repeat 30px;
 }
 
-#pest_list > ul > li:nth-child(5){
+#pest_list > ul > li:nth-child(5) {
     background: url(../images/pest_list05.jpg) no-repeat 30px;
 }
 
-#pest_list > ul > li:nth-child(6){
+#pest_list > ul > li:nth-child(6) {
     background: url(../images/pest_list06.jpg) no-repeat 30px;
 }
-#pest_list > ul > li:nth-child(7){
+
+#pest_list > ul > li:nth-child(7) {
     background: url(../images/pest_list07.jpg) no-repeat 30px;
 }
 
-#pest_list > ul > li:nth-child(8){
+#pest_list > ul > li:nth-child(8) {
     background: url(../images/pest_list08.jpg) no-repeat 30px;
 }
 
@@ -110,22 +118,22 @@
 
 }
 
-#pest_list > ul > li >p{
+#pest_list > ul > li > p {
     font-size: 16px;
     margin-left: 10px;
     letter-spacing: -0.5px;
     line-height: 27px;
 }
 
-#pest_list > ul > li >p::before{
+#pest_list > ul > li > p::before {
     content: "· ";
 }
 
-#pest_list > ul > li >p>span {
+#pest_list > ul > li > p > span {
     display: inline-block;
     width: 60px;
     height: 20px;
-    color:#ffffff;
+    color: #ffffff;
     font-size: 14px;
     border-radius: 20px;
     text-align: center;
@@ -145,7 +153,7 @@
     height: 500px;
 }
 
-#service> div{
+#service > div {
     text-align: center;
     width: 220px;
     border: 1px solid aqua;
@@ -153,37 +161,43 @@
 
 }
 
-#service>h3{
+#service > h3 {
     font-weight: 600;
     font-size: 25px;
 }
 
-.step_tit{font-size: 20px; color: red; 
-width: 250px; height: 110px; }
-
-#service div:not(div:last-child) {margin-right: 15px;}
-
-#service>div:nth-child(1) p:nth-child(1){
-     background: url(../images/service_01.jpg) no-repeat;
+.step_tit {
+    font-size: 20px;
+    color: red;
+    width: 250px;
+    height: 110px;
 }
 
-#service>div:nth-child(2) p:nth-child(1){
-     background: url(../images/service_02.jpg) no-repeat;
+#service div:not(div:last-child) {
+    margin-right: 15px;
 }
 
-#service>div:nth-child(3) p:nth-child(1){
-     background: url(../images/service_03.jpg) no-repeat;
+#service > div:nth-child(1) p:nth-child(1) {
+    background: url(../images/service_01.jpg) no-repeat;
 }
 
-#service>div:nth-child(4) p:nth-child(1){
-     background: url(../images/service_04.jpg) no-repeat;
+#service > div:nth-child(2) p:nth-child(1) {
+    background: url(../images/service_02.jpg) no-repeat;
+}
+
+#service > div:nth-child(3) p:nth-child(1) {
+    background: url(../images/service_03.jpg) no-repeat;
+}
+
+#service > div:nth-child(4) p:nth-child(1) {
+    background: url(../images/service_04.jpg) no-repeat;
 }
 
 
 
 
-#service> div h5{
-    color:fuchsia;
+#service > div h5 {
+    color: fuchsia;
     font-weight: 500;
     height: 60px;
 }
@@ -194,18 +208,48 @@ width: 250px; height: 110px; }
 
 
 /*login 로그인*/
-#login {width: 1300px; margin: 120px auto;}
+#login {
+    width: 1300px;
+    margin: 120px auto;
+}
 
-#login_box {border: 1px solid #dddddd; width: 900px; height: 420px; margin: 0 auto;}
+#login_box {
+    border: 1px solid #dddddd;
+    width: 900px;
+    height: 420px;
+    margin: 0 auto;
+}
 
-.login_box_left h4+p{width: 335px;  height: 30px; margin-bottom: 20px;}
+.login_box_left h4 + p {
+    width: 335px;
+    height: 30px;
+    margin-bottom: 20px;
+}
 
-#login_box h3{font-size: 25px; font-weight: 700;}
-#login_box h4{font-size: 18px; font-weight: 700;}
+#login_box h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
 
-.login_box_left{float: left;  width: 380px; margin-left: 90px; margin-top: 70px;}
+#login_box h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
 
-.login_box_right{float: right; width: 350px; margin-right: 20px; margin-top: 70px; }
+.login_box_left {
+    float: left;
+    width: 380px;
+    margin-top: 70px;
+    margin-left: 90px;
+    
+}
+
+.login_box_right {
+    float: right;
+    width: 350px;
+    margin-right: 20px;
+    margin-top: 70px;
+}
 
 
 
@@ -250,20 +294,17 @@ width: 250px; height: 110px; }
 .bth_link {
     height: 70px;
     margin-bottom: 10px;
-    
-    
 }
 
-.login_box_right h4+p{margin-bottom: 10px;}
+.login_box_right h4 + p {
+    margin-bottom: 10px;
+}
 
-.bth_line{
+.bth_line {
     border-bottom: 1px dotted #dddddd;
     margin-bottom: 30px;
     width: 300px;
 }
-
-
-
 
 
 .bth_link input {
@@ -283,9 +324,6 @@ width: 250px; height: 110px; }
 }
 
 
-
-
-
 .login_chk {
     height: 14px;
     margin-top: 5px;
@@ -298,11 +336,13 @@ width: 250px; height: 110px; }
     margin-right: 5px;
 }
 
-.login_chk label{font-size: 13px;}
+.login_chk label {
+    font-size: 13px;
+}
 
-.login_chk +p{color:red;}
-
-
+.login_chk + p {
+    color: red;
+}
 
 
 
@@ -310,25 +350,104 @@ width: 250px; height: 110px; }
 
 /*회원가입 sign_up*/
 
-#sign_up{width: 100%; margin-top: 80px;}
 
-#sign_up_box{ width: 1000px;  height: 500px; margin: 0 auto; border: 1px solid #cccccc; box-sizing: border-box;}
+#sign_up_box {
+    width: 900px;
+    margin: 120px auto;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
 
-#sign_up_box>div>h4{font-size: 25px; font-weight: 700;}
-.sign_info{border-collapse: collapse;}
-.sign_info caption{text-align: left;}
-.sign_info td, .sign_info th{border: 1px solid #dddddd; font-size: 13px;}
-.sign_info th{background-color: #dddddd; width: 220px;}
+}
+
+#sign_up_box input {
+    border: 1px solid rgba(153, 153, 153, 0.5);
+    width: 300px;
+    height: 30px;
+    border-radius: 2px;
+    outline: none;
+    margin-bottom: 3px;
+    text-indent: 5px;
+}
+
+#sign_up_box #input_text{
+    width: 195px;
+}
 
 
+.u_sign > p:nth-child(1) {
+    /*중복확인버튼*/
+    float: left;
+}
+
+.u_sign > p:nth-child(3) {
+    clear: both;
+}
 
 
+#sign_up .sign_bth {
+    margin-left: 5px;
+    width: 150px;
+    height: 34px;
+    
+}
+
+#sign_up .sign_bth_Confirm {
+    margin-left: 5px;
+    width: 150px;
+    height: 34px;
+    background-color: #2bc1ff;
+    color:#ffffff;
+}
+
+#sign_up .sign_bth_ok {
+    margin-left: 5px;
+    width: 100px;
+    height: 34px;
+}
+
+#sign_up h4, #sign_up caption{
+    font-weight: 600;
+}
+
+#sign_up_box p {
+    font-size: 14px;
+}
+
+#sign_up {
+    width: 100%;
+    margin-top: 80px;
+}
 
 
+.sign_info {
+    border-collapse: collapse;
+    width: 500px;
+
+}
+
+.sign_info caption {
+    text-align: left;
+}
+
+.sign_info td,
+.sign_info th {
+    border: 1px solid #cccccc;
+    font-size: 12px;
+}
+
+.sign_info th {
+    background-color: #dddddd;
+    width: 350px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.sign_info td {
+    vertical-align: middle;
+    padding:  15px;
+}
 
 
-
-
-
-
-
+.u_sign_info div > p:nth-last-child(2) {
+    float: left;
+}

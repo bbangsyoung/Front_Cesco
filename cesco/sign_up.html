@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>세스코 회사소개</title>
+    <title>세스코 회원가입</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/top_sub.css">
     <link rel="stylesheet" href="../css/sub.css">
@@ -73,18 +73,17 @@
     <!--컨텐츠시작-->
     <div id="sign_up">
         <div id="sign_up_box">
-            <div>
-                <h4>회원가입</h4>
-                <p>필수입력 항목</p>
-                <p><input type="text" placeholder="아이디 입력"></p>
-                <p><input type="button" value="중복확인"></p>
+            <h4>회원가입</h4>
+            <div class="u_sign">
+                <p><input type="text" placeholder="아이디 입력" id="input_text"></p>
+                <p><input type="button" value="중복확인" class="sign_bth_ok"></p>
                 <p><input type="password" placeholder="비밀번호 입력"></p>
                 <p><input type="password" placeholder="비밀번호 확인"></p>
-                <p>두개의 비밀번호가 일치하지않습니다</p>
+                <p>8~16자의 영문/숫자를 조합하여 입력</p>
                 <p><input type="text" placeholder="이름(실명입력)"></p>
-                <p><input type="text" placeholder="이메일">@<input type="text" placeholder="계정"></p>
+                <p><input type="text" placeholder="이메일 입력"></p>
 
-                <div>
+                <div class="u_sign_info">
                     <table class="sign_info">
                         <caption>개인정보 수집·이용에 대한 안내</caption>
                         <tr>
@@ -93,16 +92,15 @@
                             <th>보유기간</th>
                         </tr>
                         <tr>
-                            <td>-홈페이지 회원가입 및 관리<br>
-                                -이용자확인 및 의사소통 경로 확보
+                            <td>홈페이지 회원가입 및 관리<br>
+                                이용자확인 및 의사소통 경로 확보
                             </td>
                             <td>
-                                [필수]이메일 아이디, 비밀번호,<br>
+                                이메일 아이디, 비밀번호,<br>
                                 이름 (실명입력), 이메일 주소
                             </td>
                             <td>
-                                -홈페이지 회원 탈퇴 시 파기<br>
-                                -홈페이지 1년 미이용 시에는 개인정보가 별도 분리보관 됨
+                                홈페이지 회원 탈퇴 시 파기
                             </td>
                         </tr>
                     </table>
@@ -110,25 +108,12 @@
                     <p>
                         본인은 세스코 이용약관, 개인정보 수집 및 이용내용을 확인하였으며, 동의합니다. (필수)
                     </p>
-
+                    <div>
+                        <p><input type="button" value="회원가입" class="sign_bth_Confirm"></p>
+                        <p><input type="button" value="다시작성" class="sign_bth"></p>
+                    </div>
                 </div>
-
-
-
-                <p><input type="button" value="회원가입"></p>
-                <p><input type="button" value="다시작성"></p>
-
-
             </div>
-            <!--login_l-->
-
-
-
-
-
-
-
-
         </div>
     </div>
 
