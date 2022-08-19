@@ -84,7 +84,7 @@
 }
 
 #pest_list > ul > li:nth-child(3) {
-    background: url(../images/pest_list01.jpg) no-repeat 30px;
+    background: url(../images/pest_list03.jpg) no-repeat 30px;
 }
 
 #pest_list > ul > li:nth-child(4) {
@@ -145,62 +145,40 @@
 
 
 
-#service {
-    clear: both;
-    margin: 0 auto;
-    width: 1300px;
-    border: 1px solid red;
-    height: 500px;
-}
 
-#service > div {
-    text-align: center;
-    width: 220px;
-    border: 1px solid aqua;
-    float: left;
 
-}
 
-#service > h3 {
-    font-weight: 600;
+
+/*해충방제 서비스 비교*/
+#solution{width: 1000px; margin: 80px auto; text-align: center;}
+
+
+#solution>div>h3{margin-top: 30px;}
+#solution>.solution_right>h3:nth-child(1){color:#2bc1ff;}
+
+.solution_left{width: 490px; float: left; border: 10px solid #cccccc; border-radius: 50px; padding: 20px; box-sizing: border-box;}
+
+.solution_right{width: 490px; float: right; border: 10px solid #2bc1ff; border-radius: 50px; padding: 20px; box-sizing: border-box;}
+
+#solution h3{
+    font-weight: 700;
     font-size: 25px;
-}
-
-.step_tit {
-    font-size: 20px;
-    color: red;
-    width: 250px;
-    height: 110px;
-}
-
-#service div:not(div:last-child) {
-    margin-right: 15px;
-}
-
-#service > div:nth-child(1) p:nth-child(1) {
-    background: url(../images/service_01.jpg) no-repeat;
-}
-
-#service > div:nth-child(2) p:nth-child(1) {
-    background: url(../images/service_02.jpg) no-repeat;
-}
-
-#service > div:nth-child(3) p:nth-child(1) {
-    background: url(../images/service_03.jpg) no-repeat;
-}
-
-#service > div:nth-child(4) p:nth-child(1) {
-    background: url(../images/service_04.jpg) no-repeat;
+    margin-bottom: 20px;
 }
 
 
 
 
-#service > div h5 {
-    color: fuchsia;
-    font-weight: 500;
-    height: 60px;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -350,13 +328,33 @@
 
 /*회원가입 sign_up*/
 
+#sign_up {
+    width: 100%;
+    margin-top: 80px;
+}
 
 #sign_up_box {
     width: 900px;
     margin: 120px auto;
     border: 1px solid #dddddd;
     box-sizing: border-box;
+}
 
+
+#sign_up_box h4{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#sign_up_box h5{
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#sign_up_box>h4:first-child{
+    margin-top: 80px;
 }
 
 #sign_up_box input {
@@ -371,13 +369,21 @@
 
 #sign_up_box #input_text{
     width: 195px;
+
+}
+
+.u_sign {
+    width: 500px;
+    margin-top: 50px;
+    margin: 70px auto 70px auto;
+
+}
+
+.u_sign > p:nth-of-type(1) {
+    width: 310px;
 }
 
 
-.u_sign > p:nth-child(1) {
-    /*중복확인버튼*/
-    float: left;
-}
 
 .u_sign > p:nth-child(3) {
     clear: both;
@@ -402,20 +408,13 @@
 #sign_up .sign_bth_ok {
     margin-left: 5px;
     width: 100px;
-    height: 34px;
+    height: 34px;  
 }
 
-#sign_up h4, #sign_up caption{
-    font-weight: 600;
-}
+
 
 #sign_up_box p {
     font-size: 14px;
-}
-
-#sign_up {
-    width: 100%;
-    margin-top: 80px;
 }
 
 
