@@ -300,3 +300,71 @@ html {
     border-right: none;
 }
 
+
+
+/* 사이드 스크롤 퀵메뉴 */
+.scroll_quickmenu {
+    z-index: 20;
+    position: absolute;
+    width: 100px;
+    top: 100%;
+    margin-top:-20%;
+    right: 5%;
+    background: #333;
+}
+
+.scroll_quickmenu ul {
+    position: relative;
+    float: left;
+    width: 100%;
+    display: inline-block;
+    display: inline;
+    
+}
+
+.scroll_quickmenu ul li {
+    float: left;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #666;
+    text-align: center;
+    display: inline-block;
+    display: inline;
+    
+}
+
+.scroll_quickmenu ul li:nth-child(3)
+{color:#fff; line-height: 120px;
+    background: url(../images/sub_menu_icon2.png) no-repeat center 30px;
+}
+
+.scroll_quickmenu ul li a {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 70px;    
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    line-height: 20px;
+    padding-top: 30px;
+
+}
+
+.test{
+    background: #515151;
+}
+
+
+.scroll_quickmenu ul li a:hover {
+    background: blue;
+}
+
+.scroll_quickmenu ul li:last-child {
+    border-bottom: 0;
+}
+
+.scroll_quickmenu .test{
+    display: none;
+    
+}

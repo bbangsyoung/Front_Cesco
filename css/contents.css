@@ -398,6 +398,58 @@ font-size: 40px;
 }
 
 
+/* 마우스오버시 */
+/* .con3_top > div:nth-child(1):hover{
+    cursor: pointer;
+    background: url(../images/patten_w.png);
+    background-color: #0087cc;    
+}
+
+.con3_top > div:nth-child(3):hover{
+    cursor: pointer;
+    background: url(../images/patten_w.png);
+    background-color: #313133;    
+}
+
+.con3_bottom > div:nth-child(2):hover{
+    cursor: pointer;
+    background: url(../images/patten_b.png);
+    background-color: #ffffff;
+}
+.con3_bottom > div:nth-child(4):hover{
+    cursor: pointer;
+    background: url(../images/patten_w.png);
+    background-color: #005793;
+} */
+
+.con3_top div:nth-child(1){
+    text-align: center;
+}
+.con3_top div:nth-child(1) span {
+    display: block;
+    position: relative;
+    transition: all 0.3s;
+    border: 1px solid red;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.con3_top div:nth-child(1) span::after {
+    content: "\00bb";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.con3_top div:nth-child(1) span::after {
+    right: 50%;
+    opacity: 1;
+}
 
 
 

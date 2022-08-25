@@ -1,24 +1,16 @@
 @charset "utf-8";
 
 
-#con_summary {
-    margin: 0 auto;
-    width: 1300px;
-}
+#con_summary {margin: 0 auto; width: 1300px; margin-bottom: 50px;}
 
-.sub_title_top {
-    margin-top: 80px;
-    font-size: 28px;
-    font-weight: 700;
-}
-
+.sub_title_top {margin-top: 50px; font-size: 28px; font-weight: 700;}
 .sub_title{
-    margin-top: 80px;
+    display: block;
+    width: 1300px;
+    height: 35px;
     font-size: 22px;
     font-weight: 700;
-    border: 1px solid aqua;
-}
-
+    margin-bottom: 30px;}
 
 .boxing {
     width: 1260px;
@@ -31,18 +23,33 @@
     line-height: 20px;
     padding-top: 30px;
     padding-left: 40px;
-    margin-bottom: 30px;
-    margin-top: 15px;
-}
+    margin-bottom: 20px;
+    margin-top: 15px;}
 
-.boxing+p {
-    margin-bottom: 30px;
-}
+.boxing_2 {
+    width: 1260px;
+    height: 90px;
+    margin: 0 auto;
+    background: url(../images/competitive01_tit1.PNG) no-repeat 800px 0;
+    background-color: #f7f7f7;
+    font-size: 22px;
+    border-radius: 20px;
+    line-height: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 15px;}
+
+.boxing+p {margin-bottom: 30px; margin-left: 30px;}
+.boxing_2+p {margin-bottom: 30px; margin-left: 30px;}
 
 .boxing+p span {
     /*color:#2bc1ff;*/
-    background: linear-gradient(to top, #ffe400 40%, transparent 40%)
-}
+    background: linear-gradient(to top, #ffe400 40%, transparent 40%)}
+
+.boxing_2+p span {
+    /*color:#2bc1ff;*/
+    background: linear-gradient(to top, #ffe400 40%, transparent 40%)}
 
 .boxing>span {
     font-weight: 800;
@@ -51,20 +58,79 @@
     line-height: 40px;
 }
 
+.boxing_2>span {
+    font-weight: 800;
+    color: black;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+
+/* 01. 벌레종류 */
+#pest_list {margin: 0 auto; width: 1300px; height: 863px; clear: both; margin-bottom: 60px;}
+#pest_list>ul {width: 1300px;}
+#pest_list>ul>li {width: 493px; float: left; height: 150px;
+    display: block;     
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    padding: 20px 20px 20px 20px;
+    padding-left: 130px;}
+#pest_list>ul>li:nth-child(even) {margin-left: 10px;}
+
+/* 해충 별 배경이미지 삽입 */
+#pest_list>ul>li:nth-child(1) {background: url(../images/pest_list01.jpg) no-repeat 30px;}
+#pest_list>ul>li:nth-child(2) {background: url(../images/pest_list02.jpg) no-repeat 30px;}
+#pest_list>ul>li:nth-child(3) {background: url(../images/pest_list03.jpg) no-repeat 30px;}
+#pest_list>ul>li:nth-child(4) {background: url(../images/pest_list04.jpg) no-repeat 30px;}
+#pest_list>ul>li:nth-child(5) {background: url(../images/pest_list05.jpg) no-repeat 30px;}
+#pest_list>ul>li:nth-child(6) {background: url(../images/pest_list06.jpg) no-repeat 30px;}
+#pest_list>ul>li:nth-child(7) {background: url(../images/pest_list07.jpg) no-repeat 30px;}
+#pest_list>ul>li:nth-child(8) {background: url(../images/pest_list08.jpg) no-repeat 30px;}
+
+#pest_list>ul>li>h4 { /*해충 타이틀*/
+    color: #3ba4d9;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#pest_list>ul>li>p { /*해충 설명*/
+    font-size: 16px;
+    margin-left: 10px;
+    letter-spacing: -0.5px;
+    line-height: 27px;
+}
+#pest_list>ul>li>p::before {content: "· ";} /*해충 설명 앞 점*/
+#pest_list>ul>li>p>span {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #50585d;
+    margin-right: 10px;
+    margin-top: 10px;}
+
+
+
+
+
+
 /* 서비스 진행 */
-
 #service_step {
+    clear: both;
     margin: 0 auto;
-    width: 1300px;
-    border: 1px solid red;
+    width: 1300px;  
+    height: 600px;
+    margin-bottom: 60px;;
 }
 
-#service_line {
+#service_line>ul{
     margin: 0 auto;
-    background: aqua;
-    width: 1000px;
+    width: 1000px;    
 }
-
 
 #service_line>ul>li {
     width: 1000px;
@@ -76,9 +142,7 @@
     float: left;
 }
 
-#service_line>ul>li>p {
-    float: left;
-}
+#service_line>ul>li>p {float: left;}
 
 #service_line>ul>li>p:nth-child(1) {
     text-align: right;
@@ -90,130 +154,15 @@
     font-size: 20px;    
 }
 
-#service_line>ul>li>h4{font-weight: 600;
-margin-top: 23px; margin-bottom: 8px;}
-
-
-#service_line>ul>li>p:last-child {
-    color: #aaaaaa;
-    font-size: 15px;
-}
-
-
+#service_line>ul>li>h4{font-weight: 600; margin-top: 23px; margin-bottom: 8px;}
+#service_line>ul>li>p:last-child {color: #aaaaaa; font-size: 15px;}
 #service_line>ul>li>p:nth-of-type(2){margin-right: 30px;}
 #service_line>ul>li>p:nth-of-type(3){margin-left: 10px;}
 
-.step1>p:nth-of-type(1){
-    background: url(../images/baseline_quiz_white_24dp.png) no-repeat 170px 35px;
-}
-.step2>p:nth-of-type(1){
-    background: url(../images/baseline_assignment_turned_in_white_24dp.png) no-repeat 170px 35px;
-}
-.step3>p:nth-of-type(1){
-    background: url(../images/baseline_healing_white_24dp.png) no-repeat 170px 35px;
-}
-.step4>p:nth-of-type(1){
-    background: url(../images/baseline_support_agent_white_24dp.png) no-repeat 170px 35px;
-}
-
-/* 벌레종류 */
-
-#pest_list {
-    clear: both;
-    margin: 0 auto;
-    width: 1300px;
-}
-
-#pest_list>ul {
-    margin: 0 auto;
-    width: 1300px;
-    float: left;
-
-}
-
-#pest_list>ul>li {
-    display: block;
-    width: 493px;
-    height: 150px;
-    float: left;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border: 1px solid #cccccc;
-    padding: 20px 20px 20px 20px;
-    padding-left: 130px;
-}
-
-#pest_list>ul>li:nth-child(even) {
-    margin-left: 10px;
-}
-
-
-#pest_list>ul>li:nth-child(1) {
-    background: url(../images/pest_list01.jpg) no-repeat 30px;
-}
-
-#pest_list>ul>li:nth-child(2) {
-    background: url(../images/pest_list02.jpg) no-repeat 30px;
-}
-
-#pest_list>ul>li:nth-child(3) {
-    background: url(../images/pest_list03.jpg) no-repeat 30px;
-}
-
-#pest_list>ul>li:nth-child(4) {
-    background: url(../images/pest_list04.jpg) no-repeat 30px;
-}
-
-#pest_list>ul>li:nth-child(5) {
-    background: url(../images/pest_list05.jpg) no-repeat 30px;
-}
-
-#pest_list>ul>li:nth-child(6) {
-    background: url(../images/pest_list06.jpg) no-repeat 30px;
-}
-
-#pest_list>ul>li:nth-child(7) {
-    background: url(../images/pest_list07.jpg) no-repeat 30px;
-}
-
-#pest_list>ul>li:nth-child(8) {
-    background: url(../images/pest_list08.jpg) no-repeat 30px;
-}
-
-
-
-
-#pest_list>ul>li>h4 {
-    color: #3ba4d9;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 10px;
-
-}
-
-#pest_list>ul>li>p {
-    font-size: 16px;
-    margin-left: 10px;
-    letter-spacing: -0.5px;
-    line-height: 27px;
-}
-
-#pest_list>ul>li>p::before {
-    content: "· ";
-}
-
-#pest_list>ul>li>p>span {
-    display: inline-block;
-    width: 60px;
-    height: 20px;
-    color: #ffffff;
-    font-size: 14px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: #50585d;
-    margin-right: 10px;
-    margin-top: 10px;
-}
+.step1>p:nth-of-type(1){background: url(../images/baseline_quiz_white_24dp.png) no-repeat 170px 35px;}
+.step2>p:nth-of-type(1){background: url(../images/baseline_assignment_turned_in_white_24dp.png) no-repeat 170px 35px;}
+.step3>p:nth-of-type(1){background: url(../images/baseline_healing_white_24dp.png) no-repeat 170px 35px;}
+.step4>p:nth-of-type(1){background: url(../images/baseline_support_agent_white_24dp.png) no-repeat 170px 35px;}
 
 
 
@@ -224,19 +173,16 @@ margin-top: 23px; margin-bottom: 8px;}
 
 /*해충방제 서비스 비교*/
 #solution {
-    width: 1000px;
+    clear: both;
+    width: 1300px;
+    height: 1000px;
     margin: 80px auto;
-    text-align: center;
 }
 
-
-#solution>div>h3 {
-    margin-top: 30px;
-}
-
-#solution>.solution_right>h3:nth-child(1) {
-    color: #2bc1ff;
-}
+#solution_group{width: 1050px; height: 900px; margin: 0 auto;}
+#solution_group>div{text-align: center;}
+#solution_group>div>h3 {margin-top: 30px;}
+#solution>.solution_right>h3:nth-child(1) {color: #2bc1ff;}
 
 .solution_left {
     width: 490px;
@@ -245,6 +191,7 @@ margin-top: 23px; margin-bottom: 8px;}
     border-radius: 50px;
     padding: 20px;
     box-sizing: border-box;
+    
 }
 
 .solution_right {
