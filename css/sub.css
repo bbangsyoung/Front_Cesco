@@ -4,6 +4,7 @@
 #con_summary {margin: 0 auto; width: 1300px; margin-bottom: 50px;}
 
 .sub_title_top {margin-top: 50px; font-size: 28px; font-weight: 700;}
+#sub{margin: 0 auto; width: 1300px;}
 .sub_title{
     display: block;
     width: 1300px;
@@ -11,7 +12,6 @@
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 30px;}
-
 .boxing {
     width: 1260px;
     height: 80px;
@@ -25,6 +25,16 @@
     padding-left: 40px;
     margin-bottom: 20px;
     margin-top: 15px;}
+.boxing+p {margin-bottom: 30px; margin-left: 30px;}
+.boxing+p span {
+    /*color:#2bc1ff;*/
+    background: linear-gradient(to top, #ffe400 40%, transparent 40%)}
+.boxing>span {
+    font-weight: 800;
+    color: black;
+    font-size: 22px;
+    line-height: 40px;
+}
 
 .boxing_2 {
     width: 1260px;
@@ -39,31 +49,42 @@
     padding-left: 40px;
     margin-bottom: 20px;
     margin-top: 15px;}
-
-.boxing+p {margin-bottom: 30px; margin-left: 30px;}
 .boxing_2+p {margin-bottom: 30px; margin-left: 30px;}
-
-.boxing+p span {
-    /*color:#2bc1ff;*/
-    background: linear-gradient(to top, #ffe400 40%, transparent 40%)}
-
 .boxing_2+p span {
     /*color:#2bc1ff;*/
     background: linear-gradient(to top, #ffe400 40%, transparent 40%)}
-
-.boxing>span {
-    font-weight: 800;
-    color: black;
-    font-size: 22px;
-    line-height: 40px;
-}
-
 .boxing_2>span {
     font-weight: 800;
     color: black;
     font-size: 22px;
     line-height: 40px;
 }
+
+.boxing_4 {
+    width: 1260px;
+    height: 90px;
+    margin: 0 auto;
+    background: url(../images/qna_tit1.jpg) no-repeat 800px center;
+    background-color: #f7f7f7;
+    font-size: 22px;
+    border-radius: 20px;
+    line-height: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 15px;}
+.boxing_4+p {margin-bottom: 30px; margin-left: 30px;}
+.boxing_4+p span {
+    /*color:#2bc1ff;*/
+    background: linear-gradient(to top, #ffe400 40%, transparent 40%)}
+.boxing_4>span {
+    font-weight: 800;
+    color: black;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+
 
 
 /* 01. 벌레종류 */
@@ -494,3 +515,8 @@
 .u_sign_info div>p:nth-last-child(2) {
     float: left;
 }
+
+
+/* 게시판 테스트 */
+#borad {background: aqua; width: 1200px; margin: 0 auto; }
+#borad iframe{border: 1px solid red; width: 1200px; height: 800px;margin: 0; padding: 0;}
