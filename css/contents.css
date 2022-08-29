@@ -63,7 +63,6 @@ font-size: 40px;
 }
 
 #contents_00 > ul > li {
-
     width: 230px;
     height: 120px;
     display: inline-block;
@@ -110,7 +109,7 @@ font-size: 40px;
     padding-left: 12px;
 }
 
-#contents_00 span {
+#contents_00 span, .memberCountCon1, .memberCountCon2 {
     font-size: 40px;
     font-weight: 900;
     letter-spacing: -3px;
@@ -120,6 +119,7 @@ font-size: 40px;
 }
 
 #contents_00 em {
+
     letter-spacing: 0;
     font-size: 18px;
 }
@@ -160,9 +160,21 @@ font-size: 40px;
     width: 270px;
     height: 275px;
     float: left;
-    border: 2px solid #eeeeee;
+    border: 5px solid #eeeeee;
     position: relative;
     box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.5;
+}
+
+#contents_01_con2 > div:hover{
+    border-color: #058ece;     
+ 
+}
+
+#contents_01_con2 > div:hover h3{
+    color:#0087cc;    
+
 }
 
 #contents_01_con2 > div:nth-of-type(1) {
@@ -211,6 +223,7 @@ font-size: 40px;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
+    transition: all 0.5;
 }
 
 #contents_01_con2 > div p{

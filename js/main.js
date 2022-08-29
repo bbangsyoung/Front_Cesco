@@ -13,6 +13,60 @@ $(document).ready(function(){
 
 
 
+    var memberCountConTxt= 350000;
+  
+    $({ val : 150000 }).animate({ val : memberCountConTxt }, {
+     duration: 3000,
+    step: function() {
+      var num = numberWithCommas(Math.floor(this.val));
+      $(".memberCountCon1").text(num);
+    },
+    complete: function() {
+      var num = numberWithCommas(Math.floor(this.val));
+      $(".memberCountCon1").text(num).append("<em> 명</em>")
+  
+    }
+  });
+  
+  function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+
+
+
+
+  var memberCountConTxt= 50160000;
+  
+  $({ val : 20110000 }).animate({ val : memberCountConTxt }, {
+   duration: 3000,
+  step: function() {
+    var num = numberWithCommas(Math.floor(this.val));
+    $(".memberCountCon2").text(num);
+  },
+  complete: function() {
+    var num = numberWithCommas(Math.floor(this.val));
+    $(".memberCountCon2").text(num).append("<em> 건</em>");
+  }
+});
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   });
