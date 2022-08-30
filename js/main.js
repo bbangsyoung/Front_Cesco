@@ -57,6 +57,18 @@ function numberWithCommas(x) {
 
 
 
+$("#list1").change(function(){
+  $(".list1_img").html("<img src=" + $(this).val()+ " width ='200' height='60'>");
+})
+
+$("#list2").change(function(){
+  $(".list2_img").html("<img src=" + $(this).val()+ " width ='200' height='60'>");
+})
+
+
+
+
+
 
 
 

@@ -12,7 +12,8 @@ html {
     height: 100%;
     position: relative;
     min-width: 1920px;
-    min-height: 1080px;
+    min-height: 900px;
+   
 }
 
 
@@ -22,9 +23,9 @@ html {
     bottom: 0;
     width: 100%;
     min-width: 1920px;
-    overflow: hidden;
+    min-height: 900px;
+    overflow: hidden;    
 }
-
 
 
 #v_con video {
@@ -39,7 +40,7 @@ html {
     width: 100%;
     height: 100%;
     background: url(../images/patten.png);
-    opacity: 0.7;
+    opacity: 0.9;
     position: absolute;
     left: 0;
     top: 0;
@@ -48,7 +49,7 @@ html {
 .over {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 0;
     top: 0;
@@ -131,14 +132,19 @@ html {
     margin: 10px auto;
     width: 800px;
     height: 50px;
+    transition: all 0.5s;
+}
+
+#main_navi:hover{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100px;
 
 }
 
-#main_navi ul {
 
+#main_navi ul {
      margin: 0 auto;
     line-height: 50px;
-
 }
 
 #main_navi ul li {
@@ -146,11 +152,13 @@ html {
     padding: 0 30px;
     display: inline-block;
     line-height: 50px;
-
     cursor: pointer;
-
-
 }
+
+#main_navi ul li a:hover{
+    color:#48b1ed;
+}
+
 
 #main_navi ul li:first-child {
     margin-left: 0;
@@ -176,11 +184,11 @@ html {
 }
 
 #main_top_1 > h1 {
-    font-size: 20px;
+    font-size: 23px;
     line-height: 20px;
     color: #ffffff;
     border-bottom: 2px solid;
-    width: 340px;
+    width: 385px;
     height: 22px;
     display: block;
     margin-bottom: 20px;
@@ -189,7 +197,7 @@ html {
 
 #main_top_1 > p:nth-of-type(1) {
     color: #0087cc;
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 900;
     display: block;
     height: 70px;
@@ -198,12 +206,13 @@ html {
 
 #main_top_1 > p:nth-of-type(2) {
     color: #ffffff;
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 900;
     display: block;
     height: 70px;
-    line-height: 60px;
-    margin-bottom: 20px;
+    line-height: 80px;
+    margin-bottom: 30px;
+
 }
 
 #main_top_1 > p:nth-of-type(3) {
@@ -217,9 +226,8 @@ html {
     clear: both;
     position: absolute;
     left: 50%;
-    bottom: 80px;
+    bottom: 100px;
     transform: translate(-50%, 0);
-    border: 1px solid red;
     width: 100%;
     height: 100px;
     background: rgba(0, 135, 204, 0.9);
