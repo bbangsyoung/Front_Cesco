@@ -369,7 +369,32 @@ font-size: 40px;
     background: #0087cc;
 }
 
+.con3_top_img{ /*배너이미지*/
+    position: relative;
 
+}
+
+.con3_top_img>span{
+    display: block;
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    padding: auto;
+}
+
+.con3_top_img>span a{
+    width: 100%;
+    height: 170px;    
+    color: #fff;
+    display: block;
+    padding-top: 130px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+}
 
 .con3_top > div:nth-child(2) {
     background: url(../images/con03_01.jpg) no-repeat;
@@ -518,6 +543,15 @@ font-size: 40px;
     margin: 0 auto;
 }
 
+
+#contents_03_review_con li{
+    cursor: pointer;
+}
+#contents_03_review_con li:hover{
+    opacity: 0.8;
+}
+
+
 #contents_03_review_con > div {
     width: 680px;
     height: 300px;
@@ -568,12 +602,20 @@ font-size: 40px;
     margin: 0 40px;
 }
 
+#contents_03_review_con em+img {
+    margin-right: 5px;
+    vertical-align: -3px;
+}
+
 #contents_03_review_con ul li span {
     float: right;
     color: rgba(255, 255, 255, 0.5);
     line-height: 35px;
     font-size: 13px;
 }
+
+
+
 
 #contents_03_webtoon {
     position: absolute;

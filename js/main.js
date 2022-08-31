@@ -65,6 +65,15 @@ $("#list2").change(function(){
   $(".list2_img").html("<img src=" + $(this).val()+ " width ='200' height='60'>");
 })
 
+$(".caption").css("opacity","0");
+$(".con3_top_img").mouseover(function(){
+    $(".caption",this).stop().animate({opacity:"1"},300);
+}).mouseout(function(){
+    $(".caption",this).stop().animate({opacity:"0"},300);
+})
+
+
+
 
 
 
