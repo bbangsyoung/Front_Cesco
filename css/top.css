@@ -131,18 +131,12 @@ html {
     margin: 10px auto;
     width: 800px;
     height: 50px;
-    transition: all 0.5s;
-}
-
-#main_navi:hover{
-    background: rgba(0, 0, 0, 0.5);
-    height: 100px;
-
 }
 
 
-#main_navi ul {
-     margin: 0 auto;
+
+#main_navi_top {
+    margin: 0 auto;
     line-height: 50px;
 }
 
@@ -152,18 +146,19 @@ html {
     display: inline-block;
     line-height: 50px;
     cursor: pointer;
+
 }
 
-#main_navi ul li a:hover{
-    color:#48b1ed;
+#main_navi ul:first-child li a:hover{
+    color:red;
 }
 
 
-#main_navi ul li:first-child {
+#main_navi ul:first-child li:first-child {
     margin-left: 0;
 }
 
-#main_navi ul li a {
+#main_navi ul:first-child li a {
     color: #ffffff;
     font-size: 19px;
     font-weight: 600;
@@ -172,6 +167,57 @@ html {
 #main_navi ul li a:hover {
     background: url(../images/point_1d.png) no-repeat center bottom;
 }
+
+#main_sub_menu{
+    width: 100%;
+    height: 180px;
+    margin: 0 auto; 
+    background: rgba(255,255,255,0.3);
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%, 0);
+ 
+}
+
+
+.main_sub_navi{
+    border: 1px solid rgb(38, 205, 55);
+    width: 800px;
+    margin: 0 auto;   
+    height: 100px;
+    position: absolute;
+    top:70px;
+    left:50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+      
+}
+
+.main_sub_navi li {
+    display: block;
+    width: 120px;
+    border: 1px solid blue;
+    float: left;
+    text-align: center;
+    padding: 0 3px;
+}
+.main_sub_navi li:first-child{
+
+}
+
+
+.main_sub_navi a{
+    font-size: 14px;
+    font-weight: normal;
+    color:aqua;
+    border: 1px solid yellow;
+}
+
+
+
+
+
 
 
 
@@ -312,68 +358,89 @@ html {
 
 
 /* 사이드 스크롤 퀵메뉴 */
-.scroll_quickmenu {
-    z-index: 20;
-    position: absolute;
-    width: 100px;
-    top: 100%;
-    margin-top:-20%;
+#bottom5 {
+    height: 300px;
+    position : fixed;
     right: 5%;
-    background: #333;
+    z-index: 100;
+
 }
 
-.scroll_quickmenu ul {
+#family_site5 {
+    width: 100px;
+    height: 400px;
     position: relative;
-    float: left;
-    width: 100%;
-    display: inline-block;
-    display: inline;
-    
+    right: 0;
+    top: 200px;
+    overflow: hidden; 
+    border: 1px solid aqua;   
 }
 
-.scroll_quickmenu ul li {
-    float: left;
-    width: 100%;
+#family_site5>button {
+    width: 100px;
     height: 100px;
-    border-bottom: 1px solid #666;
+    background: #333;
+    border: 1px solid #666;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 52;
+    line-height: 100px;   
     text-align: center;
-    display: inline-block;
-    display: inline;
+}
+
+.icon5 {
+    border-left: 1px solid #666;
+    width: 30px;
+    height: 29px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 100px;
+    background: yellow;
+}
+
+#family_site5 ul {
+    background-color: #333;
+    width: 100px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    z-index: 51;
+    border: 1px solid #666;
+    box-sizing: border-box;
+}
+
+#family_site5 ul li {
+    background-color: #333;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-top: 1px solid #666;
+    box-sizing: border-box;
     
 }
-
-.scroll_quickmenu ul li:nth-child(3)
-{color:#fff; line-height: 120px;
-    background: url(../images/sub_menu_icon2.png) no-repeat center 30px;
+#family_site5 .on{
+    border-top:none;
 }
 
-.scroll_quickmenu ul li a {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 70px;    
-    text-align: center;
+#family_site5 ul li a {
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
     color: #fff;
     font-size: 17px;
-    line-height: 20px;
-    padding-top: 30px;
-
+    width: 100px;
+    height: 100px;    
+    line-height: 100px;   
+    display: block; 
 }
-
-.test{
-    background: #515151;
-}
-
-
-.scroll_quickmenu ul li a:hover {
-    background: blue;
-}
-
-.scroll_quickmenu ul li:last-child {
-    border-bottom: 0;
-}
-
-.scroll_quickmenu .test{
-    display: none;
-    
+#family_site5 ul li a:hover{
+    background-color: #0087cc;
 }

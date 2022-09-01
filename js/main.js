@@ -1,58 +1,38 @@
 $(document).ready(function(){
-    var quick_move = parseInt($(".scroll_quickmenu").css("top"));
+
+  $(function() {
+    var marginLeft = parseInt( $("#bottom5").css('margin-left') );
     $(window).scroll(function() {
-      var position = $(window).scrollTop(); 
-      $(".scroll_quickmenu").stop().animate({"top":position+quick_move+"px"},1000);
+      $("#bottom5").css("margin-left", marginLeft - $(this).scrollLeft())
+      .animate({top:200},1500);
     });
-
-    
-    $(".test").hide();
-    $(".test_c").click(function(){
-        $(".test:not(:animated)").slideToggle(1000)
-    });
-
-
-
-    var memberCountConTxt= 350000;
-  
-    $({ val : 150000 }).animate({ val : memberCountConTxt }, {
-     duration: 3000,
-    step: function() {
-      var num = numberWithCommas(Math.floor(this.val));
-      $(".memberCountCon1").text(num);
-    },
-    complete: function() {
-      var num = numberWithCommas(Math.floor(this.val));
-      $(".memberCountCon1").text(num).append("<em> 명</em>")
-  
-    }
   });
-  
-  function numberWithCommas(x) {
-      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
 
 
 
+    $("#family_site5 ul").animate({top:300},0);
+    var cnt2 = 1;
+    $("#family_site5>button").click(function(){
+        if(cnt2 == 1){
+            $("#family_site5 ul").animate({top:0},"fast")
+            $(".icon5").text("∨");
+            cnt2 = 0;
+        } else {
+            $("#family_site5 ul").animate({top:300},"fast");
+            $(".icon5").text("∧");
+            cnt2 = 1;
+        }
+    })
+
+    //클릭 후 페이지 왔을때의 값
+    $("#family_site5 ul li a").click(function(){
+        $("#family_site5 ul").animate({top:250},0);
+        cnt2 = 1;
+        $(".icon5").text("∧");
+    })
 
 
-  var memberCountConTxt= 50160000;
-  
-  $({ val : 20110000 }).animate({ val : memberCountConTxt }, {
-   duration: 3000,
-  step: function() {
-    var num = numberWithCommas(Math.floor(this.val));
-    $(".memberCountCon2").text(num);
-  },
-  complete: function() {
-    var num = numberWithCommas(Math.floor(this.val));
-    $(".memberCountCon2").text(num).append("<em> 건</em>");
-  }
-});
 
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
 
 
 
