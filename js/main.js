@@ -1,9 +1,28 @@
 $(document).ready(function(){
 
+//네비게이션
+$(".main_sub_navi").slideUp(1000);
+$("#main_navi_top").bind("mouseenter", function () {
+  $(".main_sub_navi").stop().slideDown("fast", "easeInOutCubic");
+});
+$(".main_sub_menu").bind("mouseleave", function () {
+  if($("#main_navi_top").is(":focus")==true) {
+      $(".main_sub_menu").show();
+  } else {
+      $(".main_sub_menu").stop().slideUp(800,"easeInOutCubic");
+  }
+}).focusout(function(){
+  $("#main_navi_top").stop().slideUp(200, "easeInOutCubic");
+})
+
+
+
+
+
   $(function() {
-    var marginLeft = parseInt( $("#bottom5").css('margin-left') );
+    var sscrolsss = parseInt( $("#bottom5").css('margin-left') );
     $(window).scroll(function() {
-      $("#bottom5").css("margin-left", marginLeft - $(this).scrollLeft())
+      $("#bottom5").css("margin-left", sscrolsss - $(this).scrollLeft())
       .animate({top:200},1500);
     });
   });
@@ -26,7 +45,7 @@ $(document).ready(function(){
 
     //클릭 후 페이지 왔을때의 값
     $("#family_site5 ul li a").click(function(){
-        $("#family_site5 ul").animate({top:250},0);
+        $("#family_site5 ul").animate({top:300},0);
         cnt2 = 1;
         $(".icon5").text("∧");
     })
