@@ -5,136 +5,92 @@
     <meta charset="UTF-8">
     <title>세스코(리뉴얼)_포트폴리오</title>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script> 
+    <script src="js/jquery.sliphover.min.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    
 </head>
 
 <body>
     <!--상단-->
     <div id="top_wrap">
 
+        <!--비디오영역 시작-->
         <div id="v_con">
             <video autoplay preload="auto" muted loop poster="images/video_freeview.jpg">
                 <source src="media/main_video.mp4" type="video/mp4">
             </video>
             <div class="over"></div>
             <div class="patten"></div>
-        </div>
+        </div> <!--비디오영역 끝-->
 
+        <!--네비영역 시작-->
         <header id="top">
-            <div class="quick_wrap1">
-                <div class="quick_wrap2">
-                    <div class="logo">
-                        <h1><a href="#"><img src="images/logo.png" alt="logo" width="138" height="50"></a></h1>
-                    </div>
-
-                    <div class="main_menu">
-                        <ul class="quick">
-
-                            <li><a href="#">로그인</a></li>
+            
+            <!--js추가위치-->
+            <nav id="main_navi">
+                <h1><a href="#"><img src="images/logo.png" alt="#" width="138" height="50"></a></h1>
+                <ul id="menu">
+                    <li><a href="#">세스코</a>
+                        <ul class="sub">
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">세스코 경쟁력</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>        
+                    </li>
+                    <li><a href="#">서비스</a>
+                        <ul class="sub">
+                            <li><a href="#">통합해충방제</a></li>
+                            <li><a href="#">통합이물분석</a></li>
+                            <li><a href="#">항균안전 솔루션</a></li>
+                        </ul>                    
+                    </li>
+                    <li><a href="#">쇼핑</a>
+                        <ul class="sub">
+                            <li><a href="#">생활위생용품</a></li>
+                            <li><a href="#">공기살균기</a></li>
+                            <li><a href="#">공기청정기</a></li>
+                        </ul>   
+                    </li>
+                    <li><a href="#">고객지원</a>
+                        <ul class="sub">
+                            <li><a href="#">방문상담</a></li>
+                            <li><a href="#">체험신청</a></li>
+                            <li><a href="#">자주 찾는 질문</a></li>
+                            <li><a href="#">QNA</a></li>                            
+                        </ul> 
+                    </li>
+                    <li><a href="#">세스코광장</a>
+                        <ul class="sub">
+                            <li><a href="#">이용후기</a></li>
+                            <li><a href="#">칭찬합니다</a></li>
+                        </ul>                     
+                    </li>
+                    <li><a href="#">마이세스코</a>
+                        <ul class="sub">
                             <li><a href="#">회원가입</a></li>
-
-                        </ul>
-                        <nav id="main_navi">
-                            <ul id="main_navi_top">
-                                <li><a href="#">세스코</a>
-                                                       
-                                </li>
-                                <li><a href="#">서비스</a>
-                                    
-                                </li>
-                                <li><a href="#">쇼핑</a>
-                                    
-                                </li>
-                                <li><a href="#">고객지원</a>
-                                    
-                                </li>
-                                <li><a href="#">세스코광장</a>
-                                    
-                                </li>
-                                <li><a href="#">마이세스코</a>
-                                    
-                                </li>
-                                <div id="main_sub_menu">
-                                    <ul class="main_sub_navi">
-                                        <li>
-                                            <p><a href="#">회사소개</a></p>
-                                            <p><a href="#">세스코 경쟁력</a></p>
-                                            <p><a href="#">오시는 길</a></p>
-                                        </li>
-                                        <li>
-                                            <p><a href="#">통합해충방제</a></p>
-                                            <p><a href="#">통합이물분석</a></p>
-                                            <p><a href="#">항균안전 솔루션</a></p>
-                                        </li>
-                                        <li>
-                                            <p><a href="#">생활위생용품</a></p>
-                                            <p><a href="#">공기살균기</a></p>
-                                            <p><a href="#">공기청정기</a></p>
-                                        </li>
-                                        <li>
-                                            <p><a href="#">방문상담&체험 신청</a></p>
-                                            <p><a href="#">QNA</a></p>
-                                        </li>
-                                        <li>
-                                            <p><a href="#">공지사항</a></p>
-                                            <p><a href="#">이용후기</a></p>
-                                            <p><a href="#">칭찬합니다</a></p>
-                                        </li>
-                                        <li>
-                                            <p><a href="#">회원가입</a></p>
-                                            <p><a href="#">회원정보관리</a></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </ul>                            
-                        </nav>
-
-                        <!-- <div id="main_sub_menu">
-                        <ul class="main_sub_navi">
-                            <li>
-                                <p><a href="#">회사소개</a></p>
-                                <p><a href="#">세스코 경쟁력</a></p>
-                                <p><a href="#">오시는 길</a></p>
-                            </li>
-                            <li>
-                                <p><a href="#">통합해충방제</a></p>
-                                <p><a href="#">통합이물분석</a></p>
-                                <p><a href="#">항균안전 솔루션</a></p>
-                            </li>
-                            <li>
-                                <p><a href="#">생활위생용품</a></p>
-                                <p><a href="#">공기살균기</a></p>
-                                <p><a href="#">공기청정기</a></p>
-                            </li>
-                            <li>
-                                <p><a href="#">방문상담&체험 신청</a></p>
-                                <p><a href="#">QNA</a></p>
-                            </li>
-                            <li>
-                                <p><a href="#">공지사항</a></p>
-                                <p><a href="#">이용후기</a></p>
-                                <p><a href="#">칭찬합니다</a></p>
-                            </li>
-                            <li>
-                                <p><a href="#">회원가입</a></p>
-                                <p><a href="#">회원정보관리</a></p>
-                            </li>
-                        </ul>
-                    </div> -->
-
-
-                    </div>
-                </div>
-            </div>
-        </header>
+                            <li><a href="#">회원정보관리</a></li>
+                        </ul>                     
+                    </li>
+                </ul>
+                <ul class="quick">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul><!--quick-->
+            </nav>
+            
+        </header><!--top-->
+         <!--네비영역 끝-->
         
-            <!--사이드 스크롤 퀵메뉴-->
+
+
+    <!--사이드 스크롤 퀵메뉴-->
     <div id="bottom5">
         <div id="family_site5">
-            <button>QUICK<span class="icon5">ㅁ</span></button>
+            <button>QUICK</button>
             <ul>
                 <li class="on"><a href="http://www.naver.com" target="_blank">무료상담</a></li>
                 <li><a href="http://www.daum.net" target="_blank">방문견적</a></li>
@@ -147,6 +103,11 @@
 
 
 
+
+
+
+
+<!--메인타이틀-->
         <div id="main_top">
             <div id="main_top_1">
                 <h1>고객의 행복에 기여하는 생활환경 위생기업</h1>
@@ -155,10 +116,12 @@
                 <p>세스코 통합해충방제 솔루션<br>
                     전문가의 진단으로 1:1통합 맞춤방제 솔루션 제공</p>
             </div>
+            
+            
             <!--contents_1-->
 
             <div id="main_top_2">
-                <div>
+                <div class="container" id="container">
                     <ul>
                         <li><a href="a">무료방문<br>상담신청</a></li>
                         <li><a href="a">견적<br>상담신청</a></li>
@@ -172,6 +135,8 @@
                     </ul>
                 </div>
             </div>
+
+            
         </div>
     </div>
 
@@ -242,7 +207,8 @@
                 <video autoplay preload="metadata" muted loop poster="#" width="846" height="552">
                     <source src="media/part3.mp4" type="video/mp4">
                 </video>
-                <div class="over_video"><p>세스코만의 토털 위생 프로그램 바로가기</p></div>
+                <div class="over_video"><p>세스코만의 토털 위생 프로그램 바로가기</p>
+                    <p><img src="images/arrow_02_off.png" alt="#" width="30" height="30"></p></div>
                 <!--<div class="patten"></div>
                 <img src="images/safe_vedio_img.jpg" alt="safe" width="846" height="552">-->
             </div>
@@ -317,40 +283,56 @@
         <!--배너8개짜리-->
         <div class="contents">
             <div class="con3_top">
-                <div>
+                <div class="b_e">
+                    <span class="line">1</span>
+                    <span class="line">2</span>
+                    <span class="line">3</span>
+                    <span class="line">4</span>
                     <h3>Why<br>세스코 멤버스</h3>                    
-                    <p>국민 브랜드 세스코 멤버스<span></span></p>
+                    <p>국민 브랜드 세스코 멤버스</p>
                     
                 </div>
                    
                 <div class="con3_top_img">    
-                    <span class="caption"><a href="">세스코 맴버스<br>바로가기</a></span>             
+                    <span class="caption"><a href="">세스코 맴버스<br><img src="images/arrow_02.png" alt="#" width="40" height="40"></a></span>             
                 </div>
-                <div>
+                <div class="b_e">
+                    <span class="line">1</span>
+                    <span class="line">2</span>
+                    <span class="line">3</span>
+                    <span class="line">4</span>
                     <h3>무료방문 상담센터</h3>
                     <p>우리집 해충이 걱정된다면<br>무료로 상담 받아보세요</p>
                 </div>
                 <div class="con3_top_img">
-                    <span class="caption"><a href="">무료방문 상담센터<br>바로가기</a></span>     
+                    <span class="caption"><a href="">무료방문 상담센터<br><img src="images/arrow_02.png" alt="#" width="40" height="40"></a></span>     
                 </div>
             </div>
 
             <div class="con3_bottom">
                 <div class="con3_top_img">
                     <span class="caption">
-                        <a href="">세스코 QNA<br>바로가기<br>
+                        <a href="">세스코 QNA<br><img src="images/arrow_02.png" alt="#" width="40" height="40"><br>
                             <img src="images/arrow_02.png" alt="#" width="20" height="0">
                         </a>
                     </span> 
                 </div>
-                <div>
+                <div class="b_e">
+                    <span class="line">1</span>
+                    <span class="line">2</span>
+                    <span class="line">3</span>
+                    <span class="line">4</span>
                     <h3>무엇이든<br>물어보세요</h3>
                     <p>해충, 바이러스, 진드기 등<br>세스코 서비스에 관한 Q&amp;A</p>
                 </div>
                 <div class="con3_top_img">
-                    <span class="caption"><a href="">생활위생용품<br>바로가기</a></span> 
+                    <span class="caption"><a href="">생활위생용품<br><img src="images/arrow_02.png" alt="#" width="40" height="40"></a></span> 
                 </div>
-                <div>
+                <div class="b_e">
+                    <span class="line">1</span>
+                    <span class="line">2</span>
+                    <span class="line">3</span>
+                    <span class="line">4</span>
                     <h3>세스코<br>생활위생용품</h3>
                     <p>세스코 과학으로 만든 생활용품</p>
                 </div>
@@ -460,18 +442,30 @@
     <div id="contents_06">
         <h3>세스코 이벤트 배너 모음</h3>
         <p>Event banner</p>
-        <div>
-            <ul>
-                <li><a href="#"><img src="images/event_banner_01.bmp" alt="#" width="200" height="200"></a></li>
-                <li><a href="#"><img src="images/event_banner_02.jpg" alt="#" width="200" height="200"></a></li>
-                <li><a href="#"><img src="images/event_banner_03.gif" alt="#" width="200" height="200"></a></li>
-                <li><a href="#"><img src="images/event_banner_04.png" alt="#" width="200" height="200"></a></li>
-                <li><a href="#"><img src="images/event_banner_05.jpg" alt="#" width="200" height="200"></a></li>
-                <li><a href="#"><img src="images/event_banner_06.jpg" alt="#" width="200" height="200"></a></li>
-            </ul>
-        </div>
-
     </div>
+
+        <div id="food_all">
+            <ul class="food">
+                <li><a href="#"><img src="images/event_banner_01.bmp" alt="#" width="240" height="240">제목1</a></li>
+                <li><a href="#"><img src="images/event_banner_02.jpg" alt="#" width="240" height="240">제목2</a></li>
+                <li><a href="#"><img src="images/event_banner_03.gif" alt="#" width="240" height="240">제목3</a></li>
+                <li><a href="#"><img src="images/event_banner_04.png" alt="#" width="240" height="240">제목4</a></li>
+                <li><a href="#"><img src="images/event_banner_05.jpg" alt="#" width="240" height="240">제목5</a></li>
+                <li><a href="#"><img src="images/event_banner_06.jpg" alt="#" width="240" height="240">제목6</a></li>
+                <li><a href="#"><img src="images/event_banner_07.png" alt="#" width="240" height="240">제목7</a></li>
+                <li><a href="#"><img src="images/event_banner_08.jpg" alt="#" width="240" height="240">제목8</a></li>
+                <li><a href="#"><img src="images/event_banner_09.jpg" alt="#" width="240" height="240">제목9</a></li>
+                <li><a href="#"><img src="images/event_banner_10.jpg" alt="#" width="240" height="240">제목10</a></li>
+                <li><a href="#"><img src="images/event_banner_11.jpg" alt="#" width="240" height="240">제목11</a></li>
+                <li><a href="#"><img src="images/event_banner_12.jpg" alt="#" width="240" height="240">제목12</a></li>
+                <li><a href="#"><img src="images/event_banner_13.jpg" alt="#" width="240" height="240">제목13</a></li>
+                <li><a href="#"><img src="images/event_banner_14.jpg" alt="#" width="240" height="240">제목14</a></li>
+                <li><a href="#"><img src="images/event_banner_15.jpg" alt="#" width="240" height="240">제목15</a></li>
+                <li><a href="#"><img src="images/event_banner_16.jpg" alt="#" width="240" height="240">제목16</a></li>
+            </ul><!--food-->
+    </div><!--food_all-->
+
+    
 
 
 
