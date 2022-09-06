@@ -8,9 +8,42 @@ function banner1() {
 
 $(document).ready(function(){
 
-//맨위긴메뉴 - 왜안되는겅미
-$(".container").sliphover({
-});
+//숫자 천단위 콤마 함수
+    function addComma(value) {
+      value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      return value;
+    }
+
+//숫자 카운터
+
+$(".counter").css("opacity", "0"); //span
+   $(".counter").animate({"opacity" : "1"});
+    $(".counter").each(function(){//span
+        
+        var $this = $(this) ;
+        countTo = $this.attr("data-count");
+        
+		var countNum = countNum; 
+        $({ countNum: $this.text()}).animate({
+            //style
+            countNum : countTo
+        }		,                                            
+        {
+            //option
+            duration : 6000,  // 속도
+            easing:"linear",  //효과(일정)
+            step: function(){  //애니메이션의 각 단계
+                $this.text(Math.floor(this.countNum)); //내림
+       		 }, 
+            complete : function(){
+                $this.text(this.countNum); //애니메이션 완료 후 실행
+       		 } 			 
+        });
+		
+   });
+
+
+
 
 
 
@@ -19,9 +52,9 @@ $(".b_e span").text("");
 $(".b_e").mouseenter(function(){  
     $(".b_e span:eq(0)").animate({width: "94%"},100,function(){
         $(this).next().animate({height: "93%"},100,function(){
-          $(".b_e span:eq(1)").css("opacity","1");
+          
             $(this).next().animate({width: "94%"},100,function(){
-              $(".b_e span:eq(3)").css("opacity","1");
+             
                 $(this).next().animate({height: "93%"},300);
             });
         });

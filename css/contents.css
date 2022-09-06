@@ -116,10 +116,19 @@ font-size: 40px;
     line-height: 50px;
     margin-bottom: 10px;
     display: block;
+    border: 1px solid red;
+    position: relative;
+}
+
+#contents_00 span:nth-of-type(1) {
+    background-color: yellow;
 }
 
 #contents_00 em {
-
+    position: absolute;
+    top:0;
+    left:20px;
+    border: 1px solid red;
     letter-spacing: 0;
     font-size: 18px;
 }
