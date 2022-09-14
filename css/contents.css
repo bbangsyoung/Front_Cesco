@@ -116,19 +116,15 @@ font-size: 40px;
     line-height: 50px;
     margin-bottom: 10px;
     display: block;
-    border: 1px solid red;
     position: relative;
 }
 
-#contents_00 span:nth-of-type(1) {
-    background-color: yellow;
-}
+
 
 #contents_00 em {
     position: absolute;
     top:0;
     left:20px;
-    border: 1px solid red;
     letter-spacing: 0;
     font-size: 18px;
 }
@@ -431,14 +427,15 @@ font-size: 40px;
 
 
 .b_e{width: 350px; height: 300px; position: relative;}
-.b_e span{background: #8fcefe; position: absolute;}
-.line{background: #8fcefe; display: block; width: 10px; height: 10px;}
-.b_e span:nth-child(1){width: 0; height: 2px; left: 10px; top: 10px;}
-.b_e span:nth-child(2){width: 2px; height: 0; right: 10px; top: 10px;}
-.b_e span:nth-child(3){width: 0; height: 2px; right: 10px; bottom:10px;}
-.b_e span:nth-child(4){width: 2px; height: 0; left: 10px; bottom:10px;}
-
-
+.b_e span{background-color: rgba(0,0,0,0.3); position: absolute; font-size: 0;}
+.b_e span:nth-child(1){width: 0%; height: 3px; left: 0; top:0; transition: width 0.2s;}
+.b_e span:nth-child(2){width: 3px; height: 0%; right: 0; top:0; transition: height 0.2s;}
+.b_e span:nth-child(3){width: 0%; height: 3px; right: 0; bottom:0; transition: width 0.2s;}
+.b_e span:nth-child(4){width: 3px; height: 0%; left: 0; bottom:0; transition: height 0.2s;}
+.b_e:hover span:nth-child(1){width: 100%; }
+.b_e:hover span:nth-child(2){height: 100%; }
+.b_e:hover span:nth-child(3){width: 100%; }
+.b_e:hover span:nth-child(4){height: 100%; }
 
 .contents h3 {
     margin-bottom: 20px;

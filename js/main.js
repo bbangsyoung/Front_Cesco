@@ -8,17 +8,41 @@ function banner1() {
 
 $(document).ready(function(){
 
-//숫자 천단위 콤마 함수
-    function addComma(value) {
-      value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-      return value;
+
+//숫자카운터 
+let countBox1 = document.querySelector('.counter2'), count = 0;
+let counting1 = setInterval(function () {
+    if (count == 350000) {
+        clearInterval(counting1);
+        return false;
     }
+    count += 2000;
+    countBox1.innerHTML = new Intl.NumberFormat().format(count);
+}, 20);
 
-//숫자 카운터
 
-$(".counter").css("opacity", "0"); //span
-   $(".counter").animate({"opacity" : "1"});
-    $(".counter").each(function(){//span
+let countBox3 = document.querySelector('.counter3'), count1 = 30160000;
+let counting3 = setInterval(function () {
+    if (count1 == 50160000) {
+        clearInterval(counting3);
+        return false;
+    }
+    count1 += 100000;
+    countBox3.innerHTML = new Intl.NumberFormat().format(count1);
+}, 20);
+
+
+
+
+
+
+
+
+//숫자 카운터 - 9
+
+$(".counter1").css("opacity", "0"); //span
+   $(".counter1").animate({"opacity" : "1"});
+    $(".counter1").each(function(){//span
         
         var $this = $(this) ;
         countTo = $this.attr("data-count");
@@ -30,7 +54,7 @@ $(".counter").css("opacity", "0"); //span
         }		,                                            
         {
             //option
-            duration : 6000,  // 속도
+            duration : 3000,  // 속도
             easing:"linear",  //효과(일정)
             step: function(){  //애니메이션의 각 단계
                 $this.text(Math.floor(this.countNum)); //내림
@@ -46,26 +70,6 @@ $(".counter").css("opacity", "0"); //span
 
 
 
-
-//배너8개짜리 호버
-$(".b_e span").text("");
-$(".b_e").mouseenter(function(){  
-    $(".b_e span:eq(0)").animate({width: "94%"},100,function(){
-        $(this).next().animate({height: "93%"},100,function(){
-          
-            $(this).next().animate({width: "94%"},100,function(){
-             
-                $(this).next().animate({height: "93%"},300);
-            });
-        });
-    });
-}).mouseleave(function(){
-  $(".b_e span:eq(0)").stop().css("width","0px","height","2px");
-  $(".b_e span:eq(1)").stop().css("opacity","0");
-  $(".b_e span:eq(2)").stop().css("width","0px","height","2px");
-  $(".b_e span:eq(3)").stop().css("opacity","0");
-  
-})
 
 
   //아래배너 연습
