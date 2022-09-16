@@ -3,7 +3,7 @@
 
 #con_summary {margin: 0 auto; width: 1300px; margin-bottom: 50px;}
 
-.sub_title_top {margin-top: 50px; font-size: 28px; font-weight: 700;}
+.sub_title_top {margin-top: 50px; font-size: 28px; font-weight: 700; clear: both;}
 #sub{margin: 0 auto; width: 1300px;}
 .sub_title{
     display: block;

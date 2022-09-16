@@ -50,104 +50,38 @@ html {
 }
 
 
+/*메인메뉴들*/
 
-/**/
+#top{background-color: #fff; position: absolute; top:-250px; width: 100%; height: 80px; margin: 0 auto; position: relative; z-index: 30; border-bottom: 2px solid #3ba4d9;}
+#main_navi{width: 1200px; height: 80px; margin: 0 auto; position: relative;}
+#main_navi h1{width: 122px; height: 42px; float: left; position: absolute; left:0; top:20px; z-index: 300;}
+#menu{width: 996px; margin: 0 auto; height: 80px;}
+#menu > li{float: left; width: 150px; height: 80px; text-align: center; position: relative; z-index: 20;}
+#menu > li > a{z-index: 20; color:#333; font-size: 21px; font-weight: bold; width: 150px; height: 80px; display: block; line-height: 80px; z-index: 20;} 
 
-#top {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 10;
-}
+#menu > li:first-child{margin-left: 50px;}
 
-.quick_wrap1 {
-    position: absolute;
-    width: 100%;
-    height: 70px;
-    border-bottom: 3px solid #0087cc;
-    background: #ffffff;
-}
-
-.quick_wrap2 {
-    width: 1400px;
-    height: 70px;
-    margin: 0 auto;
-}
-
-.logo {
-    width: 146px;
-    line-height: 200px;
-    float: left;
-    text-align: center;
-}
+.bg{position: absolute; left:0; top:0px; width: 100%; height: 280px; background-color:rgba(255,255,255,0.9); z-index: 18;} /*js*/
 
 
-.quick {
-    float: right;
-    width: 120px;
-    height: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 20px;
-    text-align: center;
-    display: inline;
-    text-align: center;
-}
 
-.quick li {
-    float: left;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 14px;
-    box-sizing: border-box;
-    width: 50px;
-    background: url(../images/bar1.jpg) no-repeat 0 4px;
-
-}
-
-.quick li:nth-child(1) {
-    margin-left: 7px;
-}
+#menu > li>.sub{position: absolute; left:0; top:80px; z-index: 20; padding-top: 20px; width: 150px; height: 170px; z-index: 21;} /*하위 ul*/
+#menu > li >.sub>li{width: 140px; height: 35px; line-height: 35px;}
+#menu > li > .sub > li > a{width: 150px; height: 35px; display: block; color:#333}
+#menu > li > .sub > li > a:hover{color: #00b4ff; font-weight: bold;}
 
 
-.quick li a {
-    color: #ffffff;
-}
+.quick{float: left; position: absolute; top:27px; right:0; z-index: 30; background:rgba(0,0,0,0.9); border-radius: 5px;} /*로그인,회원가입...*/
+.quick>li{float: left;} 
+.quick>li>a{color:#ccc; font-size: 15px;}
+.quick>li{padding: 0 10px;}
+.quick>li:first-child{background: url(../images/bar3.png) no-repeat right center;}
+.quick>li:hover a{color:#00b4ff;}
 
 
-#main_navi {
-    line-height: 100px;
-    text-align: center;
-    margin: 10px auto;
-    width: 800px;
-    height: 50px;
-}
 
-#main_navi ul {
-    margin: 0 auto;
-    line-height: 50px;
-}
 
-#main_navi ul li {
-    text-align: center;
-    padding: 0 30px;
-    display: inline-block;
-    line-height: 50px;
 
-    cursor: pointer
-}
-
-#main_navi ul li:first-child {
-    margin-left: 0;
-}
-
-#main_navi ul li a {
-    color: #333333;
-    font-size: 19px;
-    font-weight: 600;
-}
 
 
 

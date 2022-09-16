@@ -129,8 +129,6 @@ $(".bg").mouseover(function(){
 
 
 //네비게이션
-
-
   $(function() {
     var sscrolsss = parseInt( $("#bottom5").css('margin-left') );
     $(window).scroll(function() {
@@ -140,8 +138,7 @@ $(".bg").mouseover(function(){
   });
 
 
-
-    $("#family_site5 ul").animate({top:300},0);
+  $("#family_site5 ul").animate({top:300},0);
     var cnt2 = 1;
     $("#family_site5>button").click(function(){
         if(cnt2 == 1){
@@ -155,14 +152,14 @@ $(".bg").mouseover(function(){
         }
     })
 
+
+
     //클릭 후 페이지 왔을때의 값
     $("#family_site5 ul li a").click(function(){
         $("#family_site5 ul").animate({top:300},0);
         cnt2 = 1;
         $(".icon5").text("∧");
     })
-
-
 
 
 
