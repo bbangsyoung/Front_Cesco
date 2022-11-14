@@ -2,7 +2,7 @@
 <br>
 
 사이트 바로가기: <b> http://hohk.dothome.co.kr/hsy </b> <br>
-✍ 프론트 학습용으로 진행한 포트폴리오로, 메인 HTML/CSS 외 별다른 기능구현이 되어있지 않습니다.<br>
+✍ 프론트 학습용으로 진행한 포트폴리오로, 메인 HTML/CSS/JavaScript/JQuery 외 별다른 기능구현이 되어있지 않습니다.<br>
 
 ---
 ✅ <b>화면 미리보기<b><br> 
