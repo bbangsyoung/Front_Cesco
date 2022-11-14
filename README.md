@@ -1,7 +1,7 @@
 # 세스코 웹페이지 리뉴얼 - 프론트 공부용
 <br>
 
-사이트 바로가기: http://hohk.dothome.co.kr/hsy/  <br>
+사이트 바로가기: <b> http://hohk.dothome.co.kr/hsy </b> <br>
 ✍ 프론트 학습용으로 진행한 포트폴리오로, 메인 HTML/CSS 외 별다른 기능구현이 되어있지 않습니다.<br>
 
 ---
