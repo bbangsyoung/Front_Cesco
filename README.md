@@ -1,4 +1,4 @@
-# 세스코 웹페이지 리뉴얼 - 프론트 공부용
+# 세스코 웹페이지 리뉴얼 👩‍🏭 FrontWeb
 <br>
 
 사이트 바로가기: <b> http://hohk.dothome.co.kr/hsy </b> <br>
